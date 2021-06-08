@@ -1,1 +1,33 @@
 <%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
+<div class="container">
+  <h4 class="white-text">公開中の作品一覧</h4>
+  <div class="container">
+    <% @movies.each do |movie| %>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-4">
+            <div class="card-content white-text">
+              <span class="card-title"><%= movie.title %></span>
+              <p><%= movie.detail %></p>
+            </div>
+            <a class='dropdown-trigger btn' data-target='dropdown1'>上映時間を見る</a>
+
+            <ul id='dropdown1' class='dropdown-content black'>
+              <li class="card black">
+                <a class="white-text">
+                  SCREEN1 <span style="padding-left: 50px;">13:00~</span><span class="yellow-text" style="float: right;">購入　></span>
+                </a>
+              </li>
+              <li class="card black">
+                <a class="white-text">
+                  SCREEN2 <span style="padding-left: 50px;">15:30~</span><span class="yellow-text" style="float: right;">購入　></span>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
