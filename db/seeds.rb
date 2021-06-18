@@ -17,3 +17,23 @@
     { title: title, detail: detail, running_time: running_time}
   )
 end
+
+[
+  [1, '2021-7-1 9:30', 1],
+  [7, '2021-7-1 10:20', 1],
+  [1, '2021-7-1 12:00', 1],
+  [2, '2021-7-1 9:30', 2],
+  [2, '2021-7-1 12:00', 2],
+  [3, '2021-7-1 9:30', 3],
+  [3, '2021-7-1 12:00', 3],
+  [4, '2021-7-1 9:30', 4],
+  [4, '2021-7-1 12:00', 4],
+  [5, '2021-7-1 9:30', 5],
+  [5, '2021-7-1 12:00', 5],
+  [8, '2021-7-1 9:30', 6],
+  [6, '2021-7-1 12:00', 6]
+].each do |theater_number, screening_date, movie_id|
+  Schedule.create!(
+    { theater_number: theater_number, screening_date: screening_date, movie_id: movie_id }
+  )
+end
