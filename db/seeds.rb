@@ -14,7 +14,7 @@
   ['劇場版「鬼滅の刃」無限列車編', '果てなく続く 無限の夢の中へ', '2:10']
 ].each do |title, detail, running_time|
   Movie.create!(
-    { title: title, detail: detail, running_time: running_time}
+    { title: title, detail: detail, running_time: running_time }
   )
 end
 
@@ -41,3 +41,12 @@ end
 User.create!(
   email: 'admin@test.com', password: 'password'
 )
+
+[
+  ['I10', 1, 2],
+  ['I11', 1, 2]
+].each do |reserved_seat, user_id, schedule_id|
+  Reservation.create!(
+    { reserved_seat: reserved_seat, user_id: user_id, schedule_id: schedule_id }
+  )
+end
