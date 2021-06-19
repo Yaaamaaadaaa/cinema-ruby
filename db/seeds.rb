@@ -37,3 +37,7 @@ end
     { theater_number: theater_number, screening_date: screening_date, movie_id: movie_id }
   )
 end
+
+User.create!(
+  email: 'admin@test.com', password: 'password'
+)
