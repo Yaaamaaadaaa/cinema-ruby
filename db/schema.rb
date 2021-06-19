@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_05_071108) do
+ActiveRecord::Schema.define(version: 2021_06_19_022950) do
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
@@ -20,4 +20,38 @@ ActiveRecord::Schema.define(version: 2021_06_05_071108) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "reservations", force: :cascade do |t|
+    t.string "reserved_seat"
+    t.integer "user_id"
+    t.integer "schedule_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["schedule_id"], name: "index_reservations_on_schedule_id"
+    t.index ["user_id"], name: "index_reservations_on_user_id"
+  end
+
+  create_table "schedules", force: :cascade do |t|
+    t.integer "theater_number"
+    t.time "screening_date"
+    t.integer "movie_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["movie_id"], name: "index_schedules_on_movie_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  add_foreign_key "reservations", "schedules"
+  add_foreign_key "reservations", "users"
+  add_foreign_key "schedules", "movies"
 end
