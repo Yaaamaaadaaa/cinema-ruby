@@ -11,7 +11,7 @@
           <a class="dropdown-trigger btn" data-target="dropdown1" style="width:100%;">上映時間を見る</a>
 
           <ul id="dropdown1" class="dropdown-content black">
-            <% movie.schedule.each do |schedule| %>
+            <% movie.schedules.each do |schedule| %>
               <li class="card black">
                 <a class="white-text">
                   SCREEN<%= schedule.theater_number %> <span style="padding-left: 50px;"><%= schedule.screening_date.strftime('%H:%M') %>~</span><span class="yellow-text" style="float: right;">購入　></span>
