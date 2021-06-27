@@ -27,7 +27,7 @@
                 <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
               <% else %>
                 <li><%= link_to '上映スケジュール', root_path %></li>
-                <li><%= link_to 'サインアップ', new_user_registration_path %></li>
+                <li><%= link_to '新規登録', new_user_registration_path %></li>
                 <li><%= link_to 'ログイン', new_user_session_path %></li>
               <% end %>
             </ul>
@@ -42,7 +42,7 @@
             <li class="red accent-4"><%= link_to 'ログアウト', destroy_user_session_path, {method: :delete, class: "white-text"} %></li>
           <% else %>
             <li class="red accent-4"><%= link_to '上映スケジュール', root_path, {class: "white-text"} %></li>
-            <li class="red accent-4"><%= link_to 'サインアップ', new_user_registration_path, {class: "white-text"} %></li>
+            <li class="red accent-4"><%= link_to '新規登録', new_user_registration_path, {class: "white-text"} %></li>
             <li class="red accent-4"><%= link_to 'ログイン', new_user_session_path, {class: "white-text"} %></li>
           <% end %>
         </ul>
