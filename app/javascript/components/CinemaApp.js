@@ -31,10 +31,30 @@ export default class CinemaApp extends Component {
     this.setState({selects: selects});
   }
 
+  returnNumberOfSeats(i) {
+    if (i == 1) {
+      return "スクリーン1　全208席";
+    } else if (i == 2) {
+      return "スクリーン2　全123席";
+    } else if (i == 3) {
+      return "スクリーン3　全178席";
+    } else if (i == 4) {
+      return "スクリーン4　全178席";
+    } else if (i == 5) {
+      return "スクリーン5　全178席";
+    } else if (i == 6) {
+      return "スクリーン6　全164席";
+    } else if (i == 7) {
+      return "スクリーン7　全123席";
+    } else {
+      return "スクリーン8　全123席";
+    }
+  }
+
   render() {
     return (
       <div className="reservation">
-        <div>座席の指定</div>
+        <div>{this.returnNumberOfSeats(this.state.screen)}</div>
         <Screen
           onClick={(i) => this.handleClick(i)}
           screen={this.state.screen}

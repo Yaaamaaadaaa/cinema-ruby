@@ -37,9 +37,9 @@ export default class Screen extends React.Component {
             <div className="board-row">
               {this.nullSeat("A1")}
               {this.nullSeat("A2")}
-              {this.renderSeat("A3")}
-              {this.renderSeat("A4")}
-              {this.renderSeat("A5")}
+              {this.nullSeat("A3")}
+              {this.nullSeat("A4")}
+              {this.nullSeat("A5")}
               {this.renderSeat("A6")}
               {this.renderSeat("A7")}
               {this.renderSeat("A8")}
@@ -50,13 +50,18 @@ export default class Screen extends React.Component {
               {this.renderSeat("A13")}
               {this.renderSeat("A14")}
               {this.renderSeat("A15")}
+              {this.nullSeat("A16")}
+              {this.nullSeat("A17")}
+              {this.nullSeat("A18")}
+              {this.nullSeat("A19")}
+              {this.nullSeat("A20")}
             </div>
             <div className="board-row">
-              {this.nullSeat("B1")}
-              {this.nullSeat("B2")}
+              {this.renderSeat("B1")}
+              {this.renderSeat("B2")}
               {this.renderSeat("B3")}
-              {this.renderSeat("B4")}
-              {this.renderSeat("B5")}
+              {this.nullSeat("B4")}
+              {this.nullSeat("B5")}
               {this.renderSeat("B6")}
               {this.renderSeat("B7")}
               {this.renderSeat("B8")}
@@ -67,13 +72,18 @@ export default class Screen extends React.Component {
               {this.renderSeat("B13")}
               {this.renderSeat("B14")}
               {this.renderSeat("B15")}
+              {this.nullSeat("B16")}
+              {this.nullSeat("B17")}
+              {this.renderSeat("B18")}
+              {this.renderSeat("B19")}
+              {this.renderSeat("B20")}
             </div>
             <div className="board-row">
-              {this.nullSeat("C1")}
-              {this.nullSeat("C2")}
+              {this.renderSeat("C1")}
+              {this.renderSeat("C2")}
               {this.renderSeat("C3")}
-              {this.renderSeat("C4")}
-              {this.renderSeat("C5")}
+              {this.nullSeat("C4")}
+              {this.nullSeat("C5")}
               {this.renderSeat("C6")}
               {this.renderSeat("C7")}
               {this.renderSeat("C8")}
@@ -84,13 +94,18 @@ export default class Screen extends React.Component {
               {this.renderSeat("C13")}
               {this.renderSeat("C14")}
               {this.renderSeat("C15")}
+              {this.nullSeat("C16")}
+              {this.nullSeat("C17")}
+              {this.renderSeat("C18")}
+              {this.renderSeat("C19")}
+              {this.renderSeat("C20")}
             </div>
             <div className="board-row">
-              {this.nullSeat("D1")}
-              {this.nullSeat("D2")}
-              {this.nullSeat("D3")}
+              {this.renderSeat("D1")}
+              {this.renderSeat("D2")}
+              {this.renderSeat("D3")}
               {this.nullSeat("D4")}
-              {this.renderSeat("D5")}
+              {this.nullSeat("D5")}
               {this.renderSeat("D6")}
               {this.renderSeat("D7")}
               {this.renderSeat("D8")}
@@ -101,12 +116,20 @@ export default class Screen extends React.Component {
               {this.renderSeat("D13")}
               {this.renderSeat("D14")}
               {this.renderSeat("D15")}
+              {this.nullSeat("D16")}
+              {this.nullSeat("D17")}
+              {this.renderSeat("D18")}
+              {this.renderSeat("D19")}
+              {this.renderSeat("D20")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("X")}
             </div>
             <div className="board-row">
               {this.nullSeat("E1")}
               {this.nullSeat("E2")}
               {this.nullSeat("E3")}
-              {this.nullSeat("E4")}
+              {this.renderSeat("E4")}
               {this.renderSeat("E5")}
               {this.renderSeat("E6")}
               {this.renderSeat("E7")}
@@ -118,29 +141,39 @@ export default class Screen extends React.Component {
               {this.renderSeat("E13")}
               {this.renderSeat("E14")}
               {this.renderSeat("E15")}
+              {this.nullSeat("E16")}
+              {this.renderSeat("E17")}
+              {this.renderSeat("E18")}
+              {this.renderSeat("E19")}
+              {this.renderSeat("E20")}
             </div>
             <div className="board-row">
               {this.nullSeat("F1")}
               {this.nullSeat("F2")}
               {this.nullSeat("F3")}
-              {this.nullSeat("F4")}
+              {this.renderSeat("F4")}
               {this.renderSeat("F5")}
               {this.renderSeat("F6")}
               {this.renderSeat("F7")}
               {this.renderSeat("F8")}
-                {this.renderSeat("F9")}
+              {this.renderSeat("F9")}
               {this.renderSeat("F10")}
               {this.renderSeat("F11")}
               {this.renderSeat("F12")}
               {this.renderSeat("F13")}
               {this.renderSeat("F14")}
               {this.renderSeat("F15")}
+              {this.nullSeat("F16")}
+              {this.renderSeat("F17")}
+              {this.renderSeat("F18")}
+              {this.renderSeat("F19")}
+              {this.renderSeat("F20")}
             </div>
             <div className="board-row">
               {this.nullSeat("G1")}
               {this.nullSeat("G2")}
               {this.nullSeat("G3")}
-              {this.nullSeat("G4")}
+              {this.renderSeat("G4")}
               {this.renderSeat("G5")}
               {this.renderSeat("G6")}
               {this.renderSeat("G7")}
@@ -152,12 +185,17 @@ export default class Screen extends React.Component {
               {this.renderSeat("G13")}
               {this.renderSeat("G14")}
               {this.renderSeat("G15")}
+              {this.nullSeat("G16")}
+              {this.renderSeat("G17")}
+              {this.renderSeat("G18")}
+              {this.renderSeat("G19")}
+              {this.renderSeat("G20")}
             </div>
             <div className="board-row">
               {this.nullSeat("H1")}
               {this.nullSeat("H2")}
               {this.nullSeat("H3")}
-              {this.nullSeat("H4")}
+              {this.renderSeat("H4")}
               {this.renderSeat("H5")}
               {this.renderSeat("H6")}
               {this.renderSeat("H7")}
@@ -169,12 +207,17 @@ export default class Screen extends React.Component {
               {this.renderSeat("H13")}
               {this.renderSeat("H14")}
               {this.renderSeat("H15")}
+              {this.nullSeat("H16")}
+              {this.renderSeat("H17")}
+              {this.renderSeat("H18")}
+              {this.renderSeat("H19")}
+              {this.renderSeat("H20")}
             </div>
             <div className="board-row">
-              {this.renderSeat("I1")}
-              {this.renderSeat("I2")}
+              {this.nullSeat("I1")}
+              {this.nullSeat("I2")}
               {this.nullSeat("I3")}
-              {this.nullSeat("I4")}
+              {this.renderSeat("I4")}
               {this.renderSeat("I5")}
               {this.renderSeat("I6")}
               {this.renderSeat("I7")}
@@ -186,11 +229,16 @@ export default class Screen extends React.Component {
               {this.renderSeat("I13")}
               {this.renderSeat("I14")}
               {this.renderSeat("I15")}
+              {this.nullSeat("I16")}
+              {this.renderSeat("I17")}
+              {this.renderSeat("I18")}
+              {this.renderSeat("I19")}
+              {this.renderSeat("I20")}
             </div>
             <div className="board-row">
-              {this.renderSeat("J1")}
-              {this.renderSeat("J2")}
-              {this.renderSeat("J3")}
+              {this.nullSeat("J1")}
+              {this.nullSeat("J2")}
+              {this.nullSeat("J3")}
               {this.renderSeat("J4")}
               {this.renderSeat("J5")}
               {this.renderSeat("J6")}
@@ -203,548 +251,85 @@ export default class Screen extends React.Component {
               {this.renderSeat("J13")}
               {this.renderSeat("J14")}
               {this.renderSeat("J15")}
-              </div>
+              {this.nullSeat("J16")}
+              {this.renderSeat("J17")}
+              {this.renderSeat("J18")}
+              {this.renderSeat("J19")}
+              {this.renderSeat("J20")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("K1")}
+              {this.renderSeat("K2")}
+              {this.nullSeat("K3")}
+              {this.renderSeat("K4")}
+              {this.renderSeat("K5")}
+              {this.renderSeat("K6")}
+              {this.renderSeat("K7")}
+              {this.renderSeat("K8")}
+              {this.renderSeat("K9")}
+              {this.renderSeat("K10")}
+              {this.renderSeat("K11")}
+              {this.renderSeat("K12")}
+              {this.renderSeat("K13")}
+              {this.renderSeat("K14")}
+              {this.renderSeat("K15")}
+              {this.nullSeat("K16")}
+              {this.renderSeat("K17")}
+              {this.renderSeat("K18")}
+              {this.renderSeat("K19")}
+              {this.renderSeat("K20")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("L1")}
+              {this.renderSeat("L2")}
+              {this.nullSeat("L3")}
+              {this.renderSeat("L4")}
+              {this.renderSeat("L5")}
+              {this.renderSeat("L6")}
+              {this.renderSeat("L7")}
+              {this.renderSeat("L8")}
+              {this.renderSeat("L9")}
+              {this.renderSeat("L10")}
+              {this.renderSeat("L11")}
+              {this.renderSeat("L12")}
+              {this.renderSeat("L13")}
+              {this.renderSeat("L14")}
+              {this.renderSeat("L15")}
+              {this.nullSeat("L16")}
+              {this.renderSeat("L17")}
+              {this.renderSeat("L18")}
+              {this.renderSeat("L19")}
+              {this.renderSeat("L20")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("M1")}
+              {this.renderSeat("M2")}
+              {this.nullSeat("M3")}
+              {this.renderSeat("M4")}
+              {this.renderSeat("M5")}
+              {this.renderSeat("M6")}
+              {this.renderSeat("M7")}
+              {this.renderSeat("M8")}
+              {this.renderSeat("M9")}
+              {this.renderSeat("M10")}
+              {this.renderSeat("M11")}
+              {this.renderSeat("M12")}
+              {this.renderSeat("M13")}
+              {this.renderSeat("M14")}
+              {this.renderSeat("M15")}
+              {this.nullSeat("M16")}
+              {this.renderSeat("M17")}
+              {this.renderSeat("M18")}
+              {this.renderSeat("M19")}
+              {this.renderSeat("M20")}
             </div>
           </div>
-        );
-      } else if (this.props.screen == 2) {
-        return (
-          <div>
-            <div className="screen">SCREEN2</div>
-            <div style={{margin:'auto',width:'50%'}}>
-              <div className="board-row">
-                {this.nullSeat("A1")}
-                {this.nullSeat("A2")}
-                {this.renderSeat("A3")}
-                {this.renderSeat("A4")}
-                {this.renderSeat("A5")}
-                {this.renderSeat("A6")}
-                {this.renderSeat("A7")}
-                {this.renderSeat("A8")}
-                {this.renderSeat("A9")}
-                {this.renderSeat("A10")}
-                {this.renderSeat("A11")}
-                {this.renderSeat("A12")}
-                {this.renderSeat("A13")}
-                {this.renderSeat("A14")}
-                {this.renderSeat("A15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("B1")}
-                {this.nullSeat("B2")}
-                {this.renderSeat("B3")}
-                {this.renderSeat("B4")}
-                {this.renderSeat("B5")}
-                {this.renderSeat("B6")}
-                {this.renderSeat("B7")}
-                {this.renderSeat("B8")}
-                {this.renderSeat("B9")}
-                {this.renderSeat("B10")}
-                {this.renderSeat("B11")}
-                {this.renderSeat("B12")}
-                {this.renderSeat("B13")}
-                {this.renderSeat("B14")}
-                {this.renderSeat("B15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("C1")}
-                {this.nullSeat("C2")}
-                {this.renderSeat("C3")}
-                {this.renderSeat("C4")}
-                {this.renderSeat("C5")}
-                {this.renderSeat("C6")}
-                {this.renderSeat("C7")}
-                {this.renderSeat("C8")}
-                {this.renderSeat("C9")}
-                {this.renderSeat("C10")}
-                {this.renderSeat("C11")}
-                {this.renderSeat("C12")}
-                {this.renderSeat("C13")}
-                {this.renderSeat("C14")}
-                {this.renderSeat("C15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("D1")}
-                {this.nullSeat("D2")}
-                {this.nullSeat("D3")}
-                {this.nullSeat("D4")}
-                {this.renderSeat("D5")}
-                {this.renderSeat("D6")}
-                {this.renderSeat("D7")}
-                {this.renderSeat("D8")}
-                {this.renderSeat("D9")}
-                {this.renderSeat("D10")}
-                {this.renderSeat("D11")}
-                {this.renderSeat("D12")}
-                {this.renderSeat("D13")}
-                {this.renderSeat("D14")}
-                {this.renderSeat("D15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("E1")}
-                {this.nullSeat("E2")}
-                {this.nullSeat("E3")}
-                {this.nullSeat("E4")}
-                {this.renderSeat("E5")}
-                {this.renderSeat("E6")}
-                {this.renderSeat("E7")}
-                {this.renderSeat("E8")}
-                {this.renderSeat("E9")}
-                {this.renderSeat("E10")}
-                {this.renderSeat("E11")}
-                {this.renderSeat("E12")}
-                {this.renderSeat("E13")}
-                {this.renderSeat("E14")}
-                {this.renderSeat("E15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("F1")}
-                {this.nullSeat("F2")}
-                {this.nullSeat("F3")}
-                {this.nullSeat("F4")}
-                {this.renderSeat("F5")}
-                {this.renderSeat("F6")}
-                {this.renderSeat("F7")}
-                {this.renderSeat("F8")}
-                  {this.renderSeat("F9")}
-                {this.renderSeat("F10")}
-                {this.renderSeat("F11")}
-                {this.renderSeat("F12")}
-                {this.renderSeat("F13")}
-                {this.renderSeat("F14")}
-                {this.renderSeat("F15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("G1")}
-                {this.nullSeat("G2")}
-                {this.nullSeat("G3")}
-                {this.nullSeat("G4")}
-                {this.renderSeat("G5")}
-                {this.renderSeat("G6")}
-                {this.renderSeat("G7")}
-                {this.renderSeat("G8")}
-                {this.renderSeat("G9")}
-                {this.renderSeat("G10")}
-                {this.renderSeat("G11")}
-                {this.renderSeat("G12")}
-                {this.renderSeat("G13")}
-                {this.renderSeat("G14")}
-                {this.renderSeat("G15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("H1")}
-                {this.nullSeat("H2")}
-                {this.nullSeat("H3")}
-                {this.nullSeat("H4")}
-                {this.renderSeat("H5")}
-                {this.renderSeat("H6")}
-                {this.renderSeat("H7")}
-                {this.renderSeat("H8")}
-                {this.renderSeat("H9")}
-                {this.renderSeat("H10")}
-                {this.renderSeat("H11")}
-                {this.renderSeat("H12")}
-                {this.renderSeat("H13")}
-                {this.renderSeat("H14")}
-                {this.renderSeat("H15")}
-              </div>
-              <div className="board-row">
-                {this.renderSeat("I1")}
-                {this.renderSeat("I2")}
-                {this.nullSeat("I3")}
-                {this.nullSeat("I4")}
-                {this.renderSeat("I5")}
-                {this.renderSeat("I6")}
-                {this.renderSeat("I7")}
-                {this.renderSeat("I8")}
-                {this.renderSeat("I9")}
-                {this.renderSeat("I10")}
-                {this.renderSeat("I11")}
-                {this.renderSeat("I12")}
-                {this.renderSeat("I13")}
-                {this.renderSeat("I14")}
-                {this.renderSeat("I15")}
-              </div>
-              <div className="board-row">
-                {this.renderSeat("J1")}
-                {this.renderSeat("J2")}
-                {this.renderSeat("J3")}
-                {this.renderSeat("J4")}
-                {this.renderSeat("J5")}
-                {this.renderSeat("J6")}
-                {this.renderSeat("J7")}
-                {this.renderSeat("J8")}
-                {this.renderSeat("J9")}
-                {this.renderSeat("J10")}
-                {this.renderSeat("J11")}
-                {this.renderSeat("J12")}
-                {this.renderSeat("J13")}
-                {this.renderSeat("J14")}
-                {this.renderSeat("J15")}
-              </div>
-            </div>
-          </div>
-        );
-      } else if (this.props.screen == 3) {
-        return (
-          <div>
-            <div className="screen">SCREEN3</div>
-            <div style={{margin:'auto',width:'50%'}}>
-              <div className="board-row">
-                {this.nullSeat("A1")}
-                {this.nullSeat("A2")}
-                {this.renderSeat("A3")}
-                {this.renderSeat("A4")}
-                {this.renderSeat("A5")}
-                {this.renderSeat("A6")}
-                {this.renderSeat("A7")}
-                {this.renderSeat("A8")}
-                {this.renderSeat("A9")}
-                {this.renderSeat("A10")}
-                {this.renderSeat("A11")}
-                {this.renderSeat("A12")}
-                {this.renderSeat("A13")}
-                {this.renderSeat("A14")}
-                {this.renderSeat("A15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("B1")}
-                {this.nullSeat("B2")}
-                {this.renderSeat("B3")}
-                {this.renderSeat("B4")}
-                {this.renderSeat("B5")}
-                {this.renderSeat("B6")}
-                {this.renderSeat("B7")}
-                {this.renderSeat("B8")}
-                {this.renderSeat("B9")}
-                {this.renderSeat("B10")}
-                {this.renderSeat("B11")}
-                {this.renderSeat("B12")}
-                {this.renderSeat("B13")}
-                {this.renderSeat("B14")}
-                {this.renderSeat("B15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("C1")}
-                {this.nullSeat("C2")}
-                {this.renderSeat("C3")}
-                {this.renderSeat("C4")}
-                {this.renderSeat("C5")}
-                {this.renderSeat("C6")}
-                {this.renderSeat("C7")}
-                {this.renderSeat("C8")}
-                {this.renderSeat("C9")}
-                {this.renderSeat("C10")}
-                {this.renderSeat("C11")}
-                {this.renderSeat("C12")}
-                {this.renderSeat("C13")}
-                {this.renderSeat("C14")}
-                {this.renderSeat("C15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("D1")}
-                {this.nullSeat("D2")}
-                {this.nullSeat("D3")}
-                {this.nullSeat("D4")}
-                {this.renderSeat("D5")}
-                {this.renderSeat("D6")}
-                {this.renderSeat("D7")}
-                {this.renderSeat("D8")}
-                {this.renderSeat("D9")}
-                {this.renderSeat("D10")}
-                {this.renderSeat("D11")}
-                {this.renderSeat("D12")}
-                {this.renderSeat("D13")}
-                {this.renderSeat("D14")}
-                {this.renderSeat("D15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("E1")}
-                {this.nullSeat("E2")}
-                {this.nullSeat("E3")}
-                {this.nullSeat("E4")}
-                {this.renderSeat("E5")}
-                {this.renderSeat("E6")}
-                {this.renderSeat("E7")}
-                {this.renderSeat("E8")}
-                {this.renderSeat("E9")}
-                {this.renderSeat("E10")}
-                {this.renderSeat("E11")}
-                {this.renderSeat("E12")}
-                {this.renderSeat("E13")}
-                {this.renderSeat("E14")}
-                {this.renderSeat("E15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("F1")}
-                {this.nullSeat("F2")}
-                {this.nullSeat("F3")}
-                {this.nullSeat("F4")}
-                {this.renderSeat("F5")}
-                {this.renderSeat("F6")}
-                {this.renderSeat("F7")}
-                {this.renderSeat("F8")}
-                  {this.renderSeat("F9")}
-                {this.renderSeat("F10")}
-                {this.renderSeat("F11")}
-                {this.renderSeat("F12")}
-                {this.renderSeat("F13")}
-                {this.renderSeat("F14")}
-                {this.renderSeat("F15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("G1")}
-                {this.nullSeat("G2")}
-                {this.nullSeat("G3")}
-                {this.nullSeat("G4")}
-                {this.renderSeat("G5")}
-                {this.renderSeat("G6")}
-                {this.renderSeat("G7")}
-                {this.renderSeat("G8")}
-                {this.renderSeat("G9")}
-                {this.renderSeat("G10")}
-                {this.renderSeat("G11")}
-                {this.renderSeat("G12")}
-                {this.renderSeat("G13")}
-                {this.renderSeat("G14")}
-                {this.renderSeat("G15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("H1")}
-                {this.nullSeat("H2")}
-                {this.nullSeat("H3")}
-                {this.nullSeat("H4")}
-                {this.renderSeat("H5")}
-                {this.renderSeat("H6")}
-                {this.renderSeat("H7")}
-                {this.renderSeat("H8")}
-                {this.renderSeat("H9")}
-                {this.renderSeat("H10")}
-                {this.renderSeat("H11")}
-                {this.renderSeat("H12")}
-                {this.renderSeat("H13")}
-                {this.renderSeat("H14")}
-                {this.renderSeat("H15")}
-              </div>
-              <div className="board-row">
-                {this.renderSeat("I1")}
-                {this.renderSeat("I2")}
-                {this.nullSeat("I3")}
-                {this.nullSeat("I4")}
-                {this.renderSeat("I5")}
-                {this.renderSeat("I6")}
-                {this.renderSeat("I7")}
-                {this.renderSeat("I8")}
-                {this.renderSeat("I9")}
-                {this.renderSeat("I10")}
-                {this.renderSeat("I11")}
-                {this.renderSeat("I12")}
-                {this.renderSeat("I13")}
-                {this.renderSeat("I14")}
-                {this.renderSeat("I15")}
-              </div>
-              <div className="board-row">
-                {this.renderSeat("J1")}
-                {this.renderSeat("J2")}
-                {this.renderSeat("J3")}
-                {this.renderSeat("J4")}
-                {this.renderSeat("J5")}
-                {this.renderSeat("J6")}
-                {this.renderSeat("J7")}
-                {this.renderSeat("J8")}
-                {this.renderSeat("J9")}
-                {this.renderSeat("J10")}
-                {this.renderSeat("J11")}
-                {this.renderSeat("J12")}
-                {this.renderSeat("J13")}
-                {this.renderSeat("J14")}
-                {this.renderSeat("J15")}
-              </div>
-            </div>
-          </div>
-        );
-      } else if (this.props.screen == 4) {
-        return (
-          <div>
-            <div className="screen">SCREEN4</div>
-            <div style={{margin:'auto',width:'50%'}}>
-              <div className="board-row">
-                {this.nullSeat("A1")}
-                {this.nullSeat("A2")}
-                {this.renderSeat("A3")}
-                {this.renderSeat("A4")}
-                {this.renderSeat("A5")}
-                {this.renderSeat("A6")}
-                {this.renderSeat("A7")}
-                {this.renderSeat("A8")}
-                {this.renderSeat("A9")}
-                {this.renderSeat("A10")}
-                {this.renderSeat("A11")}
-                {this.renderSeat("A12")}
-                {this.renderSeat("A13")}
-                {this.renderSeat("A14")}
-                {this.renderSeat("A15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("B1")}
-                {this.nullSeat("B2")}
-                {this.renderSeat("B3")}
-                {this.renderSeat("B4")}
-                {this.renderSeat("B5")}
-                {this.renderSeat("B6")}
-                {this.renderSeat("B7")}
-                {this.renderSeat("B8")}
-                {this.renderSeat("B9")}
-                {this.renderSeat("B10")}
-                {this.renderSeat("B11")}
-                {this.renderSeat("B12")}
-                {this.renderSeat("B13")}
-                {this.renderSeat("B14")}
-                {this.renderSeat("B15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("C1")}
-                {this.nullSeat("C2")}
-                {this.renderSeat("C3")}
-                {this.renderSeat("C4")}
-                {this.renderSeat("C5")}
-                {this.renderSeat("C6")}
-                {this.renderSeat("C7")}
-                {this.renderSeat("C8")}
-                {this.renderSeat("C9")}
-                {this.renderSeat("C10")}
-                {this.renderSeat("C11")}
-                {this.renderSeat("C12")}
-                {this.renderSeat("C13")}
-                {this.renderSeat("C14")}
-                {this.renderSeat("C15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("D1")}
-                {this.nullSeat("D2")}
-                {this.nullSeat("D3")}
-                {this.nullSeat("D4")}
-                {this.renderSeat("D5")}
-                {this.renderSeat("D6")}
-                {this.renderSeat("D7")}
-                {this.renderSeat("D8")}
-                {this.renderSeat("D9")}
-                {this.renderSeat("D10")}
-                {this.renderSeat("D11")}
-                {this.renderSeat("D12")}
-                {this.renderSeat("D13")}
-                {this.renderSeat("D14")}
-                {this.renderSeat("D15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("E1")}
-                {this.nullSeat("E2")}
-                {this.nullSeat("E3")}
-                {this.nullSeat("E4")}
-                {this.renderSeat("E5")}
-                {this.renderSeat("E6")}
-                {this.renderSeat("E7")}
-                {this.renderSeat("E8")}
-                {this.renderSeat("E9")}
-                {this.renderSeat("E10")}
-                {this.renderSeat("E11")}
-                {this.renderSeat("E12")}
-                {this.renderSeat("E13")}
-                {this.renderSeat("E14")}
-                {this.renderSeat("E15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("F1")}
-                {this.nullSeat("F2")}
-                {this.nullSeat("F3")}
-                {this.nullSeat("F4")}
-                {this.renderSeat("F5")}
-                {this.renderSeat("F6")}
-                {this.renderSeat("F7")}
-                {this.renderSeat("F8")}
-                  {this.renderSeat("F9")}
-                {this.renderSeat("F10")}
-                {this.renderSeat("F11")}
-                {this.renderSeat("F12")}
-                {this.renderSeat("F13")}
-                {this.renderSeat("F14")}
-                {this.renderSeat("F15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("G1")}
-                {this.nullSeat("G2")}
-                {this.nullSeat("G3")}
-                {this.nullSeat("G4")}
-                {this.renderSeat("G5")}
-                {this.renderSeat("G6")}
-                {this.renderSeat("G7")}
-                {this.renderSeat("G8")}
-                {this.renderSeat("G9")}
-                {this.renderSeat("G10")}
-                {this.renderSeat("G11")}
-                {this.renderSeat("G12")}
-                {this.renderSeat("G13")}
-                {this.renderSeat("G14")}
-                {this.renderSeat("G15")}
-              </div>
-              <div className="board-row">
-                {this.nullSeat("H1")}
-                {this.nullSeat("H2")}
-                {this.nullSeat("H3")}
-                {this.nullSeat("H4")}
-                {this.renderSeat("H5")}
-                {this.renderSeat("H6")}
-                {this.renderSeat("H7")}
-                {this.renderSeat("H8")}
-                {this.renderSeat("H9")}
-                {this.renderSeat("H10")}
-                {this.renderSeat("H11")}
-                {this.renderSeat("H12")}
-                {this.renderSeat("H13")}
-                {this.renderSeat("H14")}
-                {this.renderSeat("H15")}
-              </div>
-              <div className="board-row">
-                {this.renderSeat("I1")}
-                {this.renderSeat("I2")}
-                {this.nullSeat("I3")}
-                {this.nullSeat("I4")}
-                {this.renderSeat("I5")}
-                {this.renderSeat("I6")}
-                {this.renderSeat("I7")}
-                {this.renderSeat("I8")}
-                {this.renderSeat("I9")}
-                {this.renderSeat("I10")}
-                {this.renderSeat("I11")}
-                {this.renderSeat("I12")}
-                {this.renderSeat("I13")}
-                {this.renderSeat("I14")}
-                {this.renderSeat("I15")}
-              </div>
-              <div className="board-row">
-                {this.renderSeat("J1")}
-                {this.renderSeat("J2")}
-                {this.renderSeat("J3")}
-                {this.renderSeat("J4")}
-                {this.renderSeat("J5")}
-                {this.renderSeat("J6")}
-                {this.renderSeat("J7")}
-                {this.renderSeat("J8")}
-                {this.renderSeat("J9")}
-                {this.renderSeat("J10")}
-                {this.renderSeat("J11")}
-                {this.renderSeat("J12")}
-                {this.renderSeat("J13")}
-                {this.renderSeat("J14")}
-                {this.renderSeat("J15")}
-              </div>
-            </div>
-          </div>
-        );
-    } else if (this.props.screen == 5) {
+        </div>
+      );
+    } else if (this.props.screen == 2) {
       return (
         <div>
-          <div className="screen">SCREEN5</div>
+          <div className="screen">SCREEN2</div>
           <div style={{margin:'auto',width:'50%'}}>
             <div className="board-row">
               {this.nullSeat("A1")}
@@ -798,6 +383,9 @@ export default class Screen extends React.Component {
               {this.renderSeat("C15")}
             </div>
             <div className="board-row">
+              {this.nullSeat("X")}
+            </div>
+            <div className="board-row">
               {this.nullSeat("D1")}
               {this.nullSeat("D2")}
               {this.nullSeat("D3")}
@@ -840,7 +428,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("F6")}
               {this.renderSeat("F7")}
               {this.renderSeat("F8")}
-                {this.renderSeat("F9")}
+              {this.renderSeat("F9")}
               {this.renderSeat("F10")}
               {this.renderSeat("F11")}
               {this.renderSeat("F12")}
@@ -919,10 +507,10 @@ export default class Screen extends React.Component {
           </div>
         </div>
       );
-    } else if (this.props.screen == 6) {
+    } else if (this.props.screen == 3) {
       return (
         <div>
-          <div className="screen">SCREEN6</div>
+          <div className="screen">SCREEN3</div>
           <div style={{margin:'auto',width:'50%'}}>
             <div className="board-row">
               {this.nullSeat("A1")}
@@ -940,10 +528,13 @@ export default class Screen extends React.Component {
               {this.renderSeat("A13")}
               {this.renderSeat("A14")}
               {this.renderSeat("A15")}
+              {this.renderSeat("A16")}
+              {this.nullSeat("A17")}
+              {this.nullSeat("B18")}
             </div>
             <div className="board-row">
               {this.nullSeat("B1")}
-              {this.nullSeat("B2")}
+              {this.renderSeat("B2")}
               {this.renderSeat("B3")}
               {this.renderSeat("B4")}
               {this.renderSeat("B5")}
@@ -957,10 +548,13 @@ export default class Screen extends React.Component {
               {this.renderSeat("B13")}
               {this.renderSeat("B14")}
               {this.renderSeat("B15")}
+              {this.renderSeat("B16")}
+              {this.renderSeat("B17")}
+              {this.nullSeat("B18")}
             </div>
             <div className="board-row">
               {this.nullSeat("C1")}
-              {this.nullSeat("C2")}
+              {this.renderSeat("C2")}
               {this.renderSeat("C3")}
               {this.renderSeat("C4")}
               {this.renderSeat("C5")}
@@ -974,12 +568,18 @@ export default class Screen extends React.Component {
               {this.renderSeat("C13")}
               {this.renderSeat("C14")}
               {this.renderSeat("C15")}
+              {this.renderSeat("C16")}
+              {this.renderSeat("C17")}
+              {this.nullSeat("C18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("X")}
             </div>
             <div className="board-row">
               {this.nullSeat("D1")}
-              {this.nullSeat("D2")}
-              {this.nullSeat("D3")}
-              {this.nullSeat("D4")}
+              {this.renderSeat("D2")}
+              {this.renderSeat("D3")}
+              {this.renderSeat("D4")}
               {this.renderSeat("D5")}
               {this.renderSeat("D6")}
               {this.renderSeat("D7")}
@@ -991,12 +591,15 @@ export default class Screen extends React.Component {
               {this.renderSeat("D13")}
               {this.renderSeat("D14")}
               {this.renderSeat("D15")}
+              {this.nullSeat("D16")}
+              {this.nullSeat("D17")}
+              {this.nullSeat("D18")}
             </div>
             <div className="board-row">
               {this.nullSeat("E1")}
-              {this.nullSeat("E2")}
-              {this.nullSeat("E3")}
-              {this.nullSeat("E4")}
+              {this.renderSeat("E2")}
+              {this.renderSeat("E3")}
+              {this.renderSeat("E4")}
               {this.renderSeat("E5")}
               {this.renderSeat("E6")}
               {this.renderSeat("E7")}
@@ -1008,29 +611,35 @@ export default class Screen extends React.Component {
               {this.renderSeat("E13")}
               {this.renderSeat("E14")}
               {this.renderSeat("E15")}
+              {this.nullSeat("E16")}
+              {this.nullSeat("E17")}
+              {this.nullSeat("E18")}
             </div>
             <div className="board-row">
               {this.nullSeat("F1")}
-              {this.nullSeat("F2")}
-              {this.nullSeat("F3")}
-              {this.nullSeat("F4")}
+              {this.renderSeat("F2")}
+              {this.renderSeat("F3")}
+              {this.renderSeat("F4")}
               {this.renderSeat("F5")}
               {this.renderSeat("F6")}
               {this.renderSeat("F7")}
               {this.renderSeat("F8")}
-                {this.renderSeat("F9")}
+              {this.renderSeat("F9")}
               {this.renderSeat("F10")}
               {this.renderSeat("F11")}
               {this.renderSeat("F12")}
               {this.renderSeat("F13")}
               {this.renderSeat("F14")}
               {this.renderSeat("F15")}
+              {this.nullSeat("F16")}
+              {this.nullSeat("F17")}
+              {this.nullSeat("F18")}
             </div>
             <div className="board-row">
               {this.nullSeat("G1")}
-              {this.nullSeat("G2")}
-              {this.nullSeat("G3")}
-              {this.nullSeat("G4")}
+              {this.renderSeat("G2")}
+              {this.renderSeat("G3")}
+              {this.renderSeat("G4")}
               {this.renderSeat("G5")}
               {this.renderSeat("G6")}
               {this.renderSeat("G7")}
@@ -1042,12 +651,15 @@ export default class Screen extends React.Component {
               {this.renderSeat("G13")}
               {this.renderSeat("G14")}
               {this.renderSeat("G15")}
+              {this.nullSeat("G16")}
+              {this.nullSeat("G17")}
+              {this.nullSeat("G18")}
             </div>
             <div className="board-row">
               {this.nullSeat("H1")}
-              {this.nullSeat("H2")}
-              {this.nullSeat("H3")}
-              {this.nullSeat("H4")}
+              {this.renderSeat("H2")}
+              {this.renderSeat("H3")}
+              {this.renderSeat("H4")}
               {this.renderSeat("H5")}
               {this.renderSeat("H6")}
               {this.renderSeat("H7")}
@@ -1059,12 +671,15 @@ export default class Screen extends React.Component {
               {this.renderSeat("H13")}
               {this.renderSeat("H14")}
               {this.renderSeat("H15")}
+              {this.nullSeat("H16")}
+              {this.nullSeat("H17")}
+              {this.nullSeat("H18")}
             </div>
             <div className="board-row">
-              {this.renderSeat("I1")}
+              {this.nullSeat("I1")}
               {this.renderSeat("I2")}
-              {this.nullSeat("I3")}
-              {this.nullSeat("I4")}
+              {this.renderSeat("I3")}
+              {this.renderSeat("I4")}
               {this.renderSeat("I5")}
               {this.renderSeat("I6")}
               {this.renderSeat("I7")}
@@ -1076,9 +691,12 @@ export default class Screen extends React.Component {
               {this.renderSeat("I13")}
               {this.renderSeat("I14")}
               {this.renderSeat("I15")}
+              {this.nullSeat("I16")}
+              {this.nullSeat("I17")}
+              {this.nullSeat("I18")}
             </div>
             <div className="board-row">
-              {this.renderSeat("J1")}
+              {this.nullSeat("J1")}
               {this.renderSeat("J2")}
               {this.renderSeat("J3")}
               {this.renderSeat("J4")}
@@ -1093,6 +711,804 @@ export default class Screen extends React.Component {
               {this.renderSeat("J13")}
               {this.renderSeat("J14")}
               {this.renderSeat("J15")}
+              {this.nullSeat("J16")}
+              {this.nullSeat("J17")}
+              {this.nullSeat("J18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("K1")}
+              {this.renderSeat("K2")}
+              {this.renderSeat("K3")}
+              {this.renderSeat("K4")}
+              {this.renderSeat("K5")}
+              {this.renderSeat("K6")}
+              {this.renderSeat("K7")}
+              {this.renderSeat("K8")}
+              {this.renderSeat("K9")}
+              {this.renderSeat("K10")}
+              {this.renderSeat("K11")}
+              {this.renderSeat("K12")}
+              {this.renderSeat("K13")}
+              {this.renderSeat("K14")}
+              {this.renderSeat("K15")}
+              {this.nullSeat("K16")}
+              {this.renderSeat("K17")}
+              {this.renderSeat("K18")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("L1")}
+              {this.renderSeat("L2")}
+              {this.renderSeat("L3")}
+              {this.renderSeat("L4")}
+              {this.renderSeat("L5")}
+              {this.renderSeat("L6")}
+              {this.renderSeat("L7")}
+              {this.renderSeat("L8")}
+              {this.renderSeat("L9")}
+              {this.renderSeat("L10")}
+              {this.renderSeat("L11")}
+              {this.renderSeat("L12")}
+              {this.renderSeat("L13")}
+              {this.renderSeat("L14")}
+              {this.renderSeat("L15")}
+              {this.renderSeat("L16")}
+              {this.renderSeat("L17")}
+              {this.renderSeat("L18")}
+            </div>
+          </div>
+        </div>
+      );
+    } else if (this.props.screen == 4) {
+      return (
+        <div>
+          <div className="screen">SCREEN4</div>
+          <div style={{margin:'auto',width:'50%'}}>
+            <div className="board-row">
+              {this.nullSeat("A1")}
+              {this.nullSeat("A2")}
+              {this.renderSeat("A3")}
+              {this.renderSeat("A4")}
+              {this.renderSeat("A5")}
+              {this.renderSeat("A6")}
+              {this.renderSeat("A7")}
+              {this.renderSeat("A8")}
+              {this.renderSeat("A9")}
+              {this.renderSeat("A10")}
+              {this.renderSeat("A11")}
+              {this.renderSeat("A12")}
+              {this.renderSeat("A13")}
+              {this.renderSeat("A14")}
+              {this.renderSeat("A15")}
+              {this.renderSeat("A16")}
+              {this.nullSeat("A17")}
+              {this.nullSeat("B18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("B1")}
+              {this.renderSeat("B2")}
+              {this.renderSeat("B3")}
+              {this.renderSeat("B4")}
+              {this.renderSeat("B5")}
+              {this.renderSeat("B6")}
+              {this.renderSeat("B7")}
+              {this.renderSeat("B8")}
+              {this.renderSeat("B9")}
+              {this.renderSeat("B10")}
+              {this.renderSeat("B11")}
+              {this.renderSeat("B12")}
+              {this.renderSeat("B13")}
+              {this.renderSeat("B14")}
+              {this.renderSeat("B15")}
+              {this.renderSeat("B16")}
+              {this.renderSeat("B17")}
+              {this.nullSeat("B18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("C1")}
+              {this.renderSeat("C2")}
+              {this.renderSeat("C3")}
+              {this.renderSeat("C4")}
+              {this.renderSeat("C5")}
+              {this.renderSeat("C6")}
+              {this.renderSeat("C7")}
+              {this.renderSeat("C8")}
+              {this.renderSeat("C9")}
+              {this.renderSeat("C10")}
+              {this.renderSeat("C11")}
+              {this.renderSeat("C12")}
+              {this.renderSeat("C13")}
+              {this.renderSeat("C14")}
+              {this.renderSeat("C15")}
+              {this.renderSeat("C16")}
+              {this.renderSeat("C17")}
+              {this.nullSeat("C18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("X")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("D1")}
+              {this.renderSeat("D2")}
+              {this.renderSeat("D3")}
+              {this.renderSeat("D4")}
+              {this.renderSeat("D5")}
+              {this.renderSeat("D6")}
+              {this.renderSeat("D7")}
+              {this.renderSeat("D8")}
+              {this.renderSeat("D9")}
+              {this.renderSeat("D10")}
+              {this.renderSeat("D11")}
+              {this.renderSeat("D12")}
+              {this.renderSeat("D13")}
+              {this.renderSeat("D14")}
+              {this.renderSeat("D15")}
+              {this.nullSeat("D16")}
+              {this.nullSeat("D17")}
+              {this.nullSeat("D18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("E1")}
+              {this.renderSeat("E2")}
+              {this.renderSeat("E3")}
+              {this.renderSeat("E4")}
+              {this.renderSeat("E5")}
+              {this.renderSeat("E6")}
+              {this.renderSeat("E7")}
+              {this.renderSeat("E8")}
+              {this.renderSeat("E9")}
+              {this.renderSeat("E10")}
+              {this.renderSeat("E11")}
+              {this.renderSeat("E12")}
+              {this.renderSeat("E13")}
+              {this.renderSeat("E14")}
+              {this.renderSeat("E15")}
+              {this.nullSeat("E16")}
+              {this.nullSeat("E17")}
+              {this.nullSeat("E18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("F1")}
+              {this.renderSeat("F2")}
+              {this.renderSeat("F3")}
+              {this.renderSeat("F4")}
+              {this.renderSeat("F5")}
+              {this.renderSeat("F6")}
+              {this.renderSeat("F7")}
+              {this.renderSeat("F8")}
+              {this.renderSeat("F9")}
+              {this.renderSeat("F10")}
+              {this.renderSeat("F11")}
+              {this.renderSeat("F12")}
+              {this.renderSeat("F13")}
+              {this.renderSeat("F14")}
+              {this.renderSeat("F15")}
+              {this.nullSeat("F16")}
+              {this.nullSeat("F17")}
+              {this.nullSeat("F18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("G1")}
+              {this.renderSeat("G2")}
+              {this.renderSeat("G3")}
+              {this.renderSeat("G4")}
+              {this.renderSeat("G5")}
+              {this.renderSeat("G6")}
+              {this.renderSeat("G7")}
+              {this.renderSeat("G8")}
+              {this.renderSeat("G9")}
+              {this.renderSeat("G10")}
+              {this.renderSeat("G11")}
+              {this.renderSeat("G12")}
+              {this.renderSeat("G13")}
+              {this.renderSeat("G14")}
+              {this.renderSeat("G15")}
+              {this.nullSeat("G16")}
+              {this.nullSeat("G17")}
+              {this.nullSeat("G18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("H1")}
+              {this.renderSeat("H2")}
+              {this.renderSeat("H3")}
+              {this.renderSeat("H4")}
+              {this.renderSeat("H5")}
+              {this.renderSeat("H6")}
+              {this.renderSeat("H7")}
+              {this.renderSeat("H8")}
+              {this.renderSeat("H9")}
+              {this.renderSeat("H10")}
+              {this.renderSeat("H11")}
+              {this.renderSeat("H12")}
+              {this.renderSeat("H13")}
+              {this.renderSeat("H14")}
+              {this.renderSeat("H15")}
+              {this.nullSeat("H16")}
+              {this.nullSeat("H17")}
+              {this.nullSeat("H18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("I1")}
+              {this.renderSeat("I2")}
+              {this.renderSeat("I3")}
+              {this.renderSeat("I4")}
+              {this.renderSeat("I5")}
+              {this.renderSeat("I6")}
+              {this.renderSeat("I7")}
+              {this.renderSeat("I8")}
+              {this.renderSeat("I9")}
+              {this.renderSeat("I10")}
+              {this.renderSeat("I11")}
+              {this.renderSeat("I12")}
+              {this.renderSeat("I13")}
+              {this.renderSeat("I14")}
+              {this.renderSeat("I15")}
+              {this.nullSeat("I16")}
+              {this.nullSeat("I17")}
+              {this.nullSeat("I18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("J1")}
+              {this.renderSeat("J2")}
+              {this.renderSeat("J3")}
+              {this.renderSeat("J4")}
+              {this.renderSeat("J5")}
+              {this.renderSeat("J6")}
+              {this.renderSeat("J7")}
+              {this.renderSeat("J8")}
+              {this.renderSeat("J9")}
+              {this.renderSeat("J10")}
+              {this.renderSeat("J11")}
+              {this.renderSeat("J12")}
+              {this.renderSeat("J13")}
+              {this.renderSeat("J14")}
+              {this.renderSeat("J15")}
+              {this.nullSeat("J16")}
+              {this.nullSeat("J17")}
+              {this.nullSeat("J18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("K1")}
+              {this.renderSeat("K2")}
+              {this.renderSeat("K3")}
+              {this.renderSeat("K4")}
+              {this.renderSeat("K5")}
+              {this.renderSeat("K6")}
+              {this.renderSeat("K7")}
+              {this.renderSeat("K8")}
+              {this.renderSeat("K9")}
+              {this.renderSeat("K10")}
+              {this.renderSeat("K11")}
+              {this.renderSeat("K12")}
+              {this.renderSeat("K13")}
+              {this.renderSeat("K14")}
+              {this.renderSeat("K15")}
+              {this.nullSeat("K16")}
+              {this.renderSeat("K17")}
+              {this.renderSeat("K18")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("L1")}
+              {this.renderSeat("L2")}
+              {this.renderSeat("L3")}
+              {this.renderSeat("L4")}
+              {this.renderSeat("L5")}
+              {this.renderSeat("L6")}
+              {this.renderSeat("L7")}
+              {this.renderSeat("L8")}
+              {this.renderSeat("L9")}
+              {this.renderSeat("L10")}
+              {this.renderSeat("L11")}
+              {this.renderSeat("L12")}
+              {this.renderSeat("L13")}
+              {this.renderSeat("L14")}
+              {this.renderSeat("L15")}
+              {this.renderSeat("L16")}
+              {this.renderSeat("L17")}
+              {this.renderSeat("L18")}
+            </div>
+          </div>
+        </div>
+      );
+    } else if (this.props.screen == 5) {
+      return (
+        <div>
+          <div className="screen">SCREEN5</div>
+          <div style={{margin:'auto',width:'50%'}}>
+            <div className="board-row">
+              {this.nullSeat("A1")}
+              {this.nullSeat("A2")}
+              {this.renderSeat("A3")}
+              {this.renderSeat("A4")}
+              {this.renderSeat("A5")}
+              {this.renderSeat("A6")}
+              {this.renderSeat("A7")}
+              {this.renderSeat("A8")}
+              {this.renderSeat("A9")}
+              {this.renderSeat("A10")}
+              {this.renderSeat("A11")}
+              {this.renderSeat("A12")}
+              {this.renderSeat("A13")}
+              {this.renderSeat("A14")}
+              {this.renderSeat("A15")}
+              {this.renderSeat("A16")}
+              {this.nullSeat("A17")}
+              {this.nullSeat("B18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("B1")}
+              {this.renderSeat("B2")}
+              {this.renderSeat("B3")}
+              {this.renderSeat("B4")}
+              {this.renderSeat("B5")}
+              {this.renderSeat("B6")}
+              {this.renderSeat("B7")}
+              {this.renderSeat("B8")}
+              {this.renderSeat("B9")}
+              {this.renderSeat("B10")}
+              {this.renderSeat("B11")}
+              {this.renderSeat("B12")}
+              {this.renderSeat("B13")}
+              {this.renderSeat("B14")}
+              {this.renderSeat("B15")}
+              {this.renderSeat("B16")}
+              {this.renderSeat("B17")}
+              {this.nullSeat("B18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("C1")}
+              {this.renderSeat("C2")}
+              {this.renderSeat("C3")}
+              {this.renderSeat("C4")}
+              {this.renderSeat("C5")}
+              {this.renderSeat("C6")}
+              {this.renderSeat("C7")}
+              {this.renderSeat("C8")}
+              {this.renderSeat("C9")}
+              {this.renderSeat("C10")}
+              {this.renderSeat("C11")}
+              {this.renderSeat("C12")}
+              {this.renderSeat("C13")}
+              {this.renderSeat("C14")}
+              {this.renderSeat("C15")}
+              {this.renderSeat("C16")}
+              {this.renderSeat("C17")}
+              {this.nullSeat("C18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("X")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("D1")}
+              {this.renderSeat("D2")}
+              {this.renderSeat("D3")}
+              {this.renderSeat("D4")}
+              {this.renderSeat("D5")}
+              {this.renderSeat("D6")}
+              {this.renderSeat("D7")}
+              {this.renderSeat("D8")}
+              {this.renderSeat("D9")}
+              {this.renderSeat("D10")}
+              {this.renderSeat("D11")}
+              {this.renderSeat("D12")}
+              {this.renderSeat("D13")}
+              {this.renderSeat("D14")}
+              {this.renderSeat("D15")}
+              {this.nullSeat("D16")}
+              {this.nullSeat("D17")}
+              {this.nullSeat("D18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("E1")}
+              {this.renderSeat("E2")}
+              {this.renderSeat("E3")}
+              {this.renderSeat("E4")}
+              {this.renderSeat("E5")}
+              {this.renderSeat("E6")}
+              {this.renderSeat("E7")}
+              {this.renderSeat("E8")}
+              {this.renderSeat("E9")}
+              {this.renderSeat("E10")}
+              {this.renderSeat("E11")}
+              {this.renderSeat("E12")}
+              {this.renderSeat("E13")}
+              {this.renderSeat("E14")}
+              {this.renderSeat("E15")}
+              {this.nullSeat("E16")}
+              {this.nullSeat("E17")}
+              {this.nullSeat("E18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("F1")}
+              {this.renderSeat("F2")}
+              {this.renderSeat("F3")}
+              {this.renderSeat("F4")}
+              {this.renderSeat("F5")}
+              {this.renderSeat("F6")}
+              {this.renderSeat("F7")}
+              {this.renderSeat("F8")}
+              {this.renderSeat("F9")}
+              {this.renderSeat("F10")}
+              {this.renderSeat("F11")}
+              {this.renderSeat("F12")}
+              {this.renderSeat("F13")}
+              {this.renderSeat("F14")}
+              {this.renderSeat("F15")}
+              {this.nullSeat("F16")}
+              {this.nullSeat("F17")}
+              {this.nullSeat("F18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("G1")}
+              {this.renderSeat("G2")}
+              {this.renderSeat("G3")}
+              {this.renderSeat("G4")}
+              {this.renderSeat("G5")}
+              {this.renderSeat("G6")}
+              {this.renderSeat("G7")}
+              {this.renderSeat("G8")}
+              {this.renderSeat("G9")}
+              {this.renderSeat("G10")}
+              {this.renderSeat("G11")}
+              {this.renderSeat("G12")}
+              {this.renderSeat("G13")}
+              {this.renderSeat("G14")}
+              {this.renderSeat("G15")}
+              {this.nullSeat("G16")}
+              {this.nullSeat("G17")}
+              {this.nullSeat("G18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("H1")}
+              {this.renderSeat("H2")}
+              {this.renderSeat("H3")}
+              {this.renderSeat("H4")}
+              {this.renderSeat("H5")}
+              {this.renderSeat("H6")}
+              {this.renderSeat("H7")}
+              {this.renderSeat("H8")}
+              {this.renderSeat("H9")}
+              {this.renderSeat("H10")}
+              {this.renderSeat("H11")}
+              {this.renderSeat("H12")}
+              {this.renderSeat("H13")}
+              {this.renderSeat("H14")}
+              {this.renderSeat("H15")}
+              {this.nullSeat("H16")}
+              {this.nullSeat("H17")}
+              {this.nullSeat("H18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("I1")}
+              {this.renderSeat("I2")}
+              {this.renderSeat("I3")}
+              {this.renderSeat("I4")}
+              {this.renderSeat("I5")}
+              {this.renderSeat("I6")}
+              {this.renderSeat("I7")}
+              {this.renderSeat("I8")}
+              {this.renderSeat("I9")}
+              {this.renderSeat("I10")}
+              {this.renderSeat("I11")}
+              {this.renderSeat("I12")}
+              {this.renderSeat("I13")}
+              {this.renderSeat("I14")}
+              {this.renderSeat("I15")}
+              {this.nullSeat("I16")}
+              {this.nullSeat("I17")}
+              {this.nullSeat("I18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("J1")}
+              {this.renderSeat("J2")}
+              {this.renderSeat("J3")}
+              {this.renderSeat("J4")}
+              {this.renderSeat("J5")}
+              {this.renderSeat("J6")}
+              {this.renderSeat("J7")}
+              {this.renderSeat("J8")}
+              {this.renderSeat("J9")}
+              {this.renderSeat("J10")}
+              {this.renderSeat("J11")}
+              {this.renderSeat("J12")}
+              {this.renderSeat("J13")}
+              {this.renderSeat("J14")}
+              {this.renderSeat("J15")}
+              {this.nullSeat("J16")}
+              {this.nullSeat("J17")}
+              {this.nullSeat("J18")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("K1")}
+              {this.renderSeat("K2")}
+              {this.renderSeat("K3")}
+              {this.renderSeat("K4")}
+              {this.renderSeat("K5")}
+              {this.renderSeat("K6")}
+              {this.renderSeat("K7")}
+              {this.renderSeat("K8")}
+              {this.renderSeat("K9")}
+              {this.renderSeat("K10")}
+              {this.renderSeat("K11")}
+              {this.renderSeat("K12")}
+              {this.renderSeat("K13")}
+              {this.renderSeat("K14")}
+              {this.renderSeat("K15")}
+              {this.nullSeat("K16")}
+              {this.renderSeat("K17")}
+              {this.renderSeat("K18")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("L1")}
+              {this.renderSeat("L2")}
+              {this.renderSeat("L3")}
+              {this.renderSeat("L4")}
+              {this.renderSeat("L5")}
+              {this.renderSeat("L6")}
+              {this.renderSeat("L7")}
+              {this.renderSeat("L8")}
+              {this.renderSeat("L9")}
+              {this.renderSeat("L10")}
+              {this.renderSeat("L11")}
+              {this.renderSeat("L12")}
+              {this.renderSeat("L13")}
+              {this.renderSeat("L14")}
+              {this.renderSeat("L15")}
+              {this.renderSeat("L16")}
+              {this.renderSeat("L17")}
+              {this.renderSeat("L18")}
+            </div>
+          </div>
+        </div>
+      );
+    } else if (this.props.screen == 6) {
+      return (
+        <div>
+          <div className="screen">SCREEN6</div>
+          <div style={{margin:'auto',width:'50%'}}>
+            <div className="board-row">
+              {this.nullSeat("A1")}
+              {this.nullSeat("A2")}
+              {this.nullSeat("A3")}
+              {this.nullSeat("A4")}
+              {this.nullSeat("A5")}
+              {this.renderSeat("A6")}
+              {this.renderSeat("A7")}
+              {this.renderSeat("A8")}
+              {this.renderSeat("A9")}
+              {this.renderSeat("A10")}
+              {this.renderSeat("A11")}
+              {this.renderSeat("A12")}
+              {this.renderSeat("A13")}
+              {this.renderSeat("A14")}
+              {this.renderSeat("A15")}
+              {this.nullSeat("A16")}
+              {this.nullSeat("A17")}
+              {this.nullSeat("A18")}
+              {this.nullSeat("A19")}
+              {this.nullSeat("A20")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("B1")}
+              {this.renderSeat("B2")}
+              {this.renderSeat("B3")}
+              {this.nullSeat("B4")}
+              {this.nullSeat("B5")}
+              {this.renderSeat("B6")}
+              {this.renderSeat("B7")}
+              {this.renderSeat("B8")}
+              {this.renderSeat("B9")}
+              {this.renderSeat("B10")}
+              {this.renderSeat("B11")}
+              {this.renderSeat("B12")}
+              {this.renderSeat("B13")}
+              {this.renderSeat("B14")}
+              {this.renderSeat("B15")}
+              {this.nullSeat("B16")}
+              {this.nullSeat("B17")}
+              {this.renderSeat("B18")}
+              {this.renderSeat("B19")}
+              {this.renderSeat("B20")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("C1")}
+              {this.renderSeat("C2")}
+              {this.renderSeat("C3")}
+              {this.nullSeat("C4")}
+              {this.nullSeat("C5")}
+              {this.renderSeat("C6")}
+              {this.renderSeat("C7")}
+              {this.renderSeat("C8")}
+              {this.renderSeat("C9")}
+              {this.renderSeat("C10")}
+              {this.renderSeat("C11")}
+              {this.renderSeat("C12")}
+              {this.renderSeat("C13")}
+              {this.renderSeat("C14")}
+              {this.renderSeat("C15")}
+              {this.nullSeat("C16")}
+              {this.nullSeat("C17")}
+              {this.renderSeat("C18")}
+              {this.renderSeat("C19")}
+              {this.renderSeat("C20")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("X")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("D1")}
+              {this.nullSeat("D2")}
+              {this.nullSeat("D3")}
+              {this.renderSeat("D4")}
+              {this.renderSeat("D5")}
+              {this.renderSeat("D6")}
+              {this.renderSeat("D7")}
+              {this.renderSeat("D8")}
+              {this.renderSeat("D9")}
+              {this.renderSeat("D10")}
+              {this.renderSeat("D11")}
+              {this.renderSeat("D12")}
+              {this.renderSeat("D13")}
+              {this.renderSeat("D14")}
+              {this.renderSeat("D15")}
+              {this.renderSeat("D16")}
+              {this.renderSeat("D17")}
+              {this.nullSeat("D18")}
+              {this.nullSeat("D19")}
+              {this.nullSeat("D20")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("E1")}
+              {this.nullSeat("E2")}
+              {this.nullSeat("E3")}
+              {this.renderSeat("E4")}
+              {this.renderSeat("E5")}
+              {this.renderSeat("E6")}
+              {this.renderSeat("E7")}
+              {this.renderSeat("E8")}
+              {this.renderSeat("E9")}
+              {this.renderSeat("E10")}
+              {this.renderSeat("E11")}
+              {this.renderSeat("E12")}
+              {this.renderSeat("E13")}
+              {this.renderSeat("E14")}
+              {this.renderSeat("E15")}
+              {this.renderSeat("E16")}
+              {this.renderSeat("E17")}
+              {this.nullSeat("E18")}
+              {this.nullSeat("E19")}
+              {this.nullSeat("E20")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("F1")}
+              {this.nullSeat("F2")}
+              {this.nullSeat("F3")}
+              {this.renderSeat("F4")}
+              {this.renderSeat("F5")}
+              {this.renderSeat("F6")}
+              {this.renderSeat("F7")}
+              {this.renderSeat("F8")}
+              {this.renderSeat("F9")}
+              {this.renderSeat("F10")}
+              {this.renderSeat("F11")}
+              {this.renderSeat("F12")}
+              {this.renderSeat("F13")}
+              {this.renderSeat("F14")}
+              {this.renderSeat("F15")}
+              {this.renderSeat("F16")}
+              {this.renderSeat("F17")}
+              {this.nullSeat("F18")}
+              {this.nullSeat("F19")}
+              {this.nullSeat("F20")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("G1")}
+              {this.nullSeat("G2")}
+              {this.nullSeat("G3")}
+              {this.renderSeat("G4")}
+              {this.renderSeat("G5")}
+              {this.renderSeat("G6")}
+              {this.renderSeat("G7")}
+              {this.renderSeat("G8")}
+              {this.renderSeat("G9")}
+              {this.renderSeat("G10")}
+              {this.renderSeat("G11")}
+              {this.renderSeat("G12")}
+              {this.renderSeat("G13")}
+              {this.renderSeat("G14")}
+              {this.renderSeat("G15")}
+              {this.renderSeat("G16")}
+              {this.renderSeat("G17")}
+              {this.nullSeat("G18")}
+              {this.nullSeat("G19")}
+              {this.nullSeat("G20")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("H1")}
+              {this.nullSeat("H2")}
+              {this.nullSeat("H3")}
+              {this.renderSeat("H4")}
+              {this.renderSeat("H5")}
+              {this.renderSeat("H6")}
+              {this.renderSeat("H7")}
+              {this.renderSeat("H8")}
+              {this.renderSeat("H9")}
+              {this.renderSeat("H10")}
+              {this.renderSeat("H11")}
+              {this.renderSeat("H12")}
+              {this.renderSeat("H13")}
+              {this.renderSeat("H14")}
+              {this.renderSeat("H15")}
+              {this.renderSeat("H16")}
+              {this.renderSeat("H17")}
+              {this.nullSeat("H18")}
+              {this.nullSeat("H19")}
+              {this.nullSeat("H20")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("I1")}
+              {this.nullSeat("I2")}
+              {this.nullSeat("I3")}
+              {this.renderSeat("I4")}
+              {this.renderSeat("I5")}
+              {this.renderSeat("I6")}
+              {this.renderSeat("I7")}
+              {this.renderSeat("I8")}
+              {this.renderSeat("I9")}
+              {this.renderSeat("I10")}
+              {this.renderSeat("I11")}
+              {this.renderSeat("I12")}
+              {this.renderSeat("I13")}
+              {this.renderSeat("I14")}
+              {this.renderSeat("I15")}
+              {this.renderSeat("I16")}
+              {this.renderSeat("I17")}
+              {this.nullSeat("I18")}
+              {this.nullSeat("I19")}
+              {this.nullSeat("I20")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("J1")}
+              {this.renderSeat("J2")}
+              {this.nullSeat("J3")}
+              {this.renderSeat("J4")}
+              {this.renderSeat("J5")}
+              {this.renderSeat("J6")}
+              {this.renderSeat("J7")}
+              {this.renderSeat("J8")}
+              {this.renderSeat("J9")}
+              {this.renderSeat("J10")}
+              {this.renderSeat("J11")}
+              {this.renderSeat("J12")}
+              {this.renderSeat("J13")}
+              {this.renderSeat("J14")}
+              {this.renderSeat("J15")}
+              {this.renderSeat("J16")}
+              {this.renderSeat("J17")}
+              {this.nullSeat("J18")}
+              {this.renderSeat("J19")}
+              {this.renderSeat("J20")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("K1")}
+              {this.renderSeat("K2")}
+              {this.renderSeat("K3")}
+              {this.renderSeat("K4")}
+              {this.renderSeat("K5")}
+              {this.renderSeat("K6")}
+              {this.renderSeat("K7")}
+              {this.renderSeat("K8")}
+              {this.renderSeat("K9")}
+              {this.renderSeat("K10")}
+              {this.renderSeat("K11")}
+              {this.renderSeat("K12")}
+              {this.renderSeat("K13")}
+              {this.renderSeat("K14")}
+              {this.renderSeat("K15")}
+              {this.renderSeat("K16")}
+              {this.renderSeat("K17")}
+              {this.renderSeat("K18")}
+              {this.renderSeat("K19")}
+              {this.renderSeat("K20")}
             </div>
           </div>
         </div>
@@ -1116,8 +1532,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("A11")}
               {this.renderSeat("A12")}
               {this.renderSeat("A13")}
-              {this.renderSeat("A14")}
-              {this.renderSeat("A15")}
+              {this.nullSeat("A14")}
             </div>
             <div className="board-row">
               {this.nullSeat("B1")}
@@ -1133,8 +1548,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("B11")}
               {this.renderSeat("B12")}
               {this.renderSeat("B13")}
-              {this.renderSeat("B14")}
-              {this.renderSeat("B15")}
+              {this.nullSeat("B14")}
             </div>
             <div className="board-row">
               {this.nullSeat("C1")}
@@ -1150,8 +1564,10 @@ export default class Screen extends React.Component {
               {this.renderSeat("C11")}
               {this.renderSeat("C12")}
               {this.renderSeat("C13")}
-              {this.renderSeat("C14")}
-              {this.renderSeat("C15")}
+              {this.nullSeat("C14")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("X")}
             </div>
             <div className="board-row">
               {this.nullSeat("D1")}
@@ -1167,8 +1583,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("D11")}
               {this.renderSeat("D12")}
               {this.renderSeat("D13")}
-              {this.renderSeat("D14")}
-              {this.renderSeat("D15")}
+              {this.nullSeat("D14")}
             </div>
             <div className="board-row">
               {this.nullSeat("E1")}
@@ -1184,8 +1599,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("E11")}
               {this.renderSeat("E12")}
               {this.renderSeat("E13")}
-              {this.renderSeat("E14")}
-              {this.renderSeat("E15")}
+              {this.nullSeat("E14")}
             </div>
             <div className="board-row">
               {this.nullSeat("F1")}
@@ -1196,13 +1610,12 @@ export default class Screen extends React.Component {
               {this.renderSeat("F6")}
               {this.renderSeat("F7")}
               {this.renderSeat("F8")}
-                {this.renderSeat("F9")}
+              {this.renderSeat("F9")}
               {this.renderSeat("F10")}
               {this.renderSeat("F11")}
               {this.renderSeat("F12")}
               {this.renderSeat("F13")}
-              {this.renderSeat("F14")}
-              {this.renderSeat("F15")}
+              {this.nullSeat("F14")}
             </div>
             <div className="board-row">
               {this.nullSeat("G1")}
@@ -1218,8 +1631,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("G11")}
               {this.renderSeat("G12")}
               {this.renderSeat("G13")}
-              {this.renderSeat("G14")}
-              {this.renderSeat("G15")}
+              {this.nullSeat("G14")}
             </div>
             <div className="board-row">
               {this.nullSeat("H1")}
@@ -1235,12 +1647,11 @@ export default class Screen extends React.Component {
               {this.renderSeat("H11")}
               {this.renderSeat("H12")}
               {this.renderSeat("H13")}
-              {this.renderSeat("H14")}
-              {this.renderSeat("H15")}
+              {this.nullSeat("H14")}
             </div>
             <div className="board-row">
-              {this.renderSeat("I1")}
-              {this.renderSeat("I2")}
+              {this.nullSeat("I1")}
+              {this.nullSeat("I2")}
               {this.nullSeat("I3")}
               {this.nullSeat("I4")}
               {this.renderSeat("I5")}
@@ -1252,14 +1663,13 @@ export default class Screen extends React.Component {
               {this.renderSeat("I11")}
               {this.renderSeat("I12")}
               {this.renderSeat("I13")}
-              {this.renderSeat("I14")}
-              {this.renderSeat("I15")}
+              {this.nullSeat("I14")}
             </div>
             <div className="board-row">
               {this.renderSeat("J1")}
               {this.renderSeat("J2")}
-              {this.renderSeat("J3")}
-              {this.renderSeat("J4")}
+              {this.nullSeat("J3")}
+              {this.nullSeat("J4")}
               {this.renderSeat("J5")}
               {this.renderSeat("J6")}
               {this.renderSeat("J7")}
@@ -1269,8 +1679,39 @@ export default class Screen extends React.Component {
               {this.renderSeat("J11")}
               {this.renderSeat("J12")}
               {this.renderSeat("J13")}
-              {this.renderSeat("J14")}
-              {this.renderSeat("J15")}
+              {this.nullSeat("J14")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("K1")}
+              {this.renderSeat("K2")}
+              {this.nullSeat("K3")}
+              {this.nullSeat("K4")}
+              {this.renderSeat("K5")}
+              {this.renderSeat("K6")}
+              {this.renderSeat("K7")}
+              {this.renderSeat("K8")}
+              {this.renderSeat("K9")}
+              {this.renderSeat("K10")}
+              {this.renderSeat("K11")}
+              {this.renderSeat("K12")}
+              {this.renderSeat("K13")}
+              {this.nullSeat("K14")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("L1")}
+              {this.renderSeat("L2")}
+              {this.renderSeat("L3")}
+              {this.renderSeat("L4")}
+              {this.renderSeat("L5")}
+              {this.renderSeat("L6")}
+              {this.renderSeat("L7")}
+              {this.renderSeat("L8")}
+              {this.renderSeat("L9")}
+              {this.renderSeat("L10")}
+              {this.renderSeat("L11")}
+              {this.renderSeat("L12")}
+              {this.renderSeat("L13")}
+              {this.renderSeat("L14")}
             </div>
           </div>
         </div>
@@ -1294,8 +1735,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("A11")}
               {this.renderSeat("A12")}
               {this.renderSeat("A13")}
-              {this.renderSeat("A14")}
-              {this.renderSeat("A15")}
+              {this.nullSeat("A14")}
             </div>
             <div className="board-row">
               {this.nullSeat("B1")}
@@ -1311,8 +1751,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("B11")}
               {this.renderSeat("B12")}
               {this.renderSeat("B13")}
-              {this.renderSeat("B14")}
-              {this.renderSeat("B15")}
+              {this.nullSeat("B14")}
             </div>
             <div className="board-row">
               {this.nullSeat("C1")}
@@ -1328,8 +1767,10 @@ export default class Screen extends React.Component {
               {this.renderSeat("C11")}
               {this.renderSeat("C12")}
               {this.renderSeat("C13")}
-              {this.renderSeat("C14")}
-              {this.renderSeat("C15")}
+              {this.nullSeat("C14")}
+            </div>
+            <div className="board-row">
+              {this.nullSeat("X")}
             </div>
             <div className="board-row">
               {this.nullSeat("D1")}
@@ -1345,8 +1786,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("D11")}
               {this.renderSeat("D12")}
               {this.renderSeat("D13")}
-              {this.renderSeat("D14")}
-              {this.renderSeat("D15")}
+              {this.nullSeat("D14")}
             </div>
             <div className="board-row">
               {this.nullSeat("E1")}
@@ -1362,8 +1802,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("E11")}
               {this.renderSeat("E12")}
               {this.renderSeat("E13")}
-              {this.renderSeat("E14")}
-              {this.renderSeat("E15")}
+              {this.nullSeat("E14")}
             </div>
             <div className="board-row">
               {this.nullSeat("F1")}
@@ -1374,13 +1813,12 @@ export default class Screen extends React.Component {
               {this.renderSeat("F6")}
               {this.renderSeat("F7")}
               {this.renderSeat("F8")}
-                {this.renderSeat("F9")}
+              {this.renderSeat("F9")}
               {this.renderSeat("F10")}
               {this.renderSeat("F11")}
               {this.renderSeat("F12")}
               {this.renderSeat("F13")}
-              {this.renderSeat("F14")}
-              {this.renderSeat("F15")}
+              {this.nullSeat("F14")}
             </div>
             <div className="board-row">
               {this.nullSeat("G1")}
@@ -1396,8 +1834,7 @@ export default class Screen extends React.Component {
               {this.renderSeat("G11")}
               {this.renderSeat("G12")}
               {this.renderSeat("G13")}
-              {this.renderSeat("G14")}
-              {this.renderSeat("G15")}
+              {this.nullSeat("G14")}
             </div>
             <div className="board-row">
               {this.nullSeat("H1")}
@@ -1413,12 +1850,11 @@ export default class Screen extends React.Component {
               {this.renderSeat("H11")}
               {this.renderSeat("H12")}
               {this.renderSeat("H13")}
-              {this.renderSeat("H14")}
-              {this.renderSeat("H15")}
+              {this.nullSeat("H14")}
             </div>
             <div className="board-row">
-              {this.renderSeat("I1")}
-              {this.renderSeat("I2")}
+              {this.nullSeat("I1")}
+              {this.nullSeat("I2")}
               {this.nullSeat("I3")}
               {this.nullSeat("I4")}
               {this.renderSeat("I5")}
@@ -1430,14 +1866,13 @@ export default class Screen extends React.Component {
               {this.renderSeat("I11")}
               {this.renderSeat("I12")}
               {this.renderSeat("I13")}
-              {this.renderSeat("I14")}
-              {this.renderSeat("I15")}
+              {this.nullSeat("I14")}
             </div>
             <div className="board-row">
               {this.renderSeat("J1")}
               {this.renderSeat("J2")}
-              {this.renderSeat("J3")}
-              {this.renderSeat("J4")}
+              {this.nullSeat("J3")}
+              {this.nullSeat("J4")}
               {this.renderSeat("J5")}
               {this.renderSeat("J6")}
               {this.renderSeat("J7")}
@@ -1447,8 +1882,39 @@ export default class Screen extends React.Component {
               {this.renderSeat("J11")}
               {this.renderSeat("J12")}
               {this.renderSeat("J13")}
-              {this.renderSeat("J14")}
-              {this.renderSeat("J15")}
+              {this.nullSeat("J14")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("K1")}
+              {this.renderSeat("K2")}
+              {this.nullSeat("K3")}
+              {this.nullSeat("K4")}
+              {this.renderSeat("K5")}
+              {this.renderSeat("K6")}
+              {this.renderSeat("K7")}
+              {this.renderSeat("K8")}
+              {this.renderSeat("K9")}
+              {this.renderSeat("K10")}
+              {this.renderSeat("K11")}
+              {this.renderSeat("K12")}
+              {this.renderSeat("K13")}
+              {this.nullSeat("K14")}
+            </div>
+            <div className="board-row">
+              {this.renderSeat("L1")}
+              {this.renderSeat("L2")}
+              {this.renderSeat("L3")}
+              {this.renderSeat("L4")}
+              {this.renderSeat("L5")}
+              {this.renderSeat("L6")}
+              {this.renderSeat("L7")}
+              {this.renderSeat("L8")}
+              {this.renderSeat("L9")}
+              {this.renderSeat("L10")}
+              {this.renderSeat("L11")}
+              {this.renderSeat("L12")}
+              {this.renderSeat("L13")}
+              {this.renderSeat("L14")}
             </div>
           </div>
         </div>
