@@ -7,6 +7,8 @@ export default class CinemaApp extends Component {
     super(props);
     this.state = {
       selects: [],
+      screen: [this.props.screen],
+      schedule: [this.props.schedule]
     };
   }
 
@@ -35,6 +37,7 @@ export default class CinemaApp extends Component {
         <div>座席の指定</div>
         <Screen
           onClick={(i) => this.handleClick(i)}
+          screen={this.state.screen}
           selects={this.state.selects}
         />
         <div>選択中の座席</div>

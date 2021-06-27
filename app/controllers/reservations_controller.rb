@@ -1,4 +1,5 @@
 class ReservationsController < ApplicationController
-  def index
+  def show
+    @schedule = Schedule.find(params[:id])
   end
 end

@@ -1,6 +1,6 @@
 <h4 class="white-text">座席の指定</h4>
   <div class="container white">
-    <%= react_component("CinemaApp") %>
+    <%= react_component("CinemaApp", {screen: @schedule.theater_number, schedule: @schedule.id}) %>
   </div>
 <p class="white-text">一つ前に戻る</p>
 <p class="white-text">作品を選び直す</p>
