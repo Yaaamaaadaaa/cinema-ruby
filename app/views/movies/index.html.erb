@@ -7,22 +7,14 @@
           <div class="card-content white-text">
             <span class="card-title"><%= movie.title %></span>
             <p><%= movie.detail %></p>
+            <% movie.schedules.each do |schedule| %>
+              <li class="card black">
+                <%= link_to reservation_path(schedule), class: "white-text" do %>
+                  SCREEN<%= schedule.theater_number %> <span style="padding-left: 50px;"><%= schedule.screening_date.strftime('%H:%M') %>~</span><span class="yellow-text" style="float: right;">購入　></span>
+                <% end %>
+              </li>
+            <% end %>
           </div>
-          <a class="dropdown-trigger btn" data-target="dropdown1" style="width:100%;">上映時間を見る</a>
-
-          <ul id="dropdown" class="dropdown-content black">
-            <li class="card black">
-              <a class="white-text">
-                SCREEN1 <span style="padding-left: 50px;">13:00~</span><span class="yellow-text" style="float: right;">購入　></span>
-              </a>
-            </li>
-            <li class="card black">
-              <a class="white-text">
-                SCREEN2 <span style="padding-left: 50px;">15:30~</span><span class="yellow-text" style="float: right;">購入　></span>
-              </a>
-            </li>
-          </ul>
-
         </div>
       </div>
     <% end %>

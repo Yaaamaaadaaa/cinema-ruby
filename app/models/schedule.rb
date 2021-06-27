@@ -1,4 +1,5 @@
 class Schedule < ApplicationRecord
   belongs_to :movie
-  has_many :reservation
+  has_many :reservations
+  has_many :users, through: :reservations
 end

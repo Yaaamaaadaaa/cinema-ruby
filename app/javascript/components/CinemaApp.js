@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Screen from './Screen'
+import Screen from './Screen';
 
 export default class CinemaApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
       selects: [],
+      screen: [this.props.screen],
+      schedule: [this.props.schedule]
     };
   }
 
@@ -29,12 +31,33 @@ export default class CinemaApp extends Component {
     this.setState({selects: selects});
   }
 
+  returnNumberOfSeats(i) {
+    if (i == 1) {
+      return "スクリーン1　全208席";
+    } else if (i == 2) {
+      return "スクリーン2　全123席";
+    } else if (i == 3) {
+      return "スクリーン3　全178席";
+    } else if (i == 4) {
+      return "スクリーン4　全178席";
+    } else if (i == 5) {
+      return "スクリーン5　全178席";
+    } else if (i == 6) {
+      return "スクリーン6　全164席";
+    } else if (i == 7) {
+      return "スクリーン7　全123席";
+    } else {
+      return "スクリーン8　全123席";
+    }
+  }
+
   render() {
     return (
       <div className="reservation">
-        <div>座席の指定</div>
+        <div>{this.returnNumberOfSeats(this.state.screen)}</div>
         <Screen
           onClick={(i) => this.handleClick(i)}
+          screen={this.state.screen}
           selects={this.state.selects}
         />
         <div>選択中の座席</div>
@@ -42,7 +65,11 @@ export default class CinemaApp extends Component {
           number={this.state.selects}
         />
         <button onClick={() => this.resetSelects() }>リセット</button>
-        <button>次へ</button>
+        <form action="/reservations/new" method="GET">
+          <input type="hidden" name="schedule" value={this.state.schedule} />
+          <input type="hidden" name="selects" value={this.state.selects} />
+          <input type="submit" value="次へ" />
+        </form>
       </div>
     );
   }
