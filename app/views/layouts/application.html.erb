@@ -12,21 +12,39 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <div id="app" class="black">
       <nav>
         <div class="nav-wrapper red accent-4">
           <a href="/" class="brand-logo white-space:nowrap">Ruby シネマワールド</a>
           <a href="#" data-target="mobile-menu" class="sidenav-trigger">menu</a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">上映スケジュール</a></li>
-            <li><a href="#">上映作品</a></li>
+            <% if user_signed_in? %>
+              <li><%= link_to current_user.email %></li>
+              <li><%= link_to '上映スケジュール', root_path %></li>
+              <li><%= link_to 'プロフィール確認', edit_user_registration_path %></li>
+              <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+            <% else %>
+             <li><%= link_to '上映スケジュール', root_path %></li>
+              <li><%= link_to 'サインアップ', new_user_registration_path %></li>
+              <li><%= link_to 'ログイン', new_user_session_path %></li>
+            <% end %>
           </ul>
         </div>
       </nav>
 
       <ul class="sidenav black" id="mobile-menu">
-        <li><a href="#" class="white-text red accent-4">上映スケジュール</a></li>
-        <li><a href="#" class="white-text red accent-4">上映作品</a></li>
+        <% if user_signed_in? %>
+          <li class="red accent-4"><%= link_to current_user.email, edit_user_registration_path, {class: "white-text"} %></li>
+          <li class="red accent-4"><%= link_to '上映スケジュール', root_path, {class: "white-text"} %></li>
+          <li class="red accent-4"><%= link_to 'プロフィール確認', edit_user_registration_path, {class: "white-text"} %></li>
+          <li class="red accent-4"><%= link_to 'ログアウト', destroy_user_session_path, {method: :delete, class: "white-text"} %></li>
+        <% else %>
+          <li class="red accent-4"><%= link_to '上映スケジュール', root_path, {class: "white-text"} %></li>
+          <li class="red accent-4"><%= link_to 'サインアップ', new_user_registration_path, {class: "white-text"} %></li>
+          <li class="red accent-4"><%= link_to 'ログイン', new_user_session_path, {class: "white-text"} %></li>
+        <% end %>
       </ul>
 
       <%= yield %>
