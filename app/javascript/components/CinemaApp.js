@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Screen from './Screen'
+import Screen from './Screen';
 
 export default class CinemaApp extends Component {
   constructor(props) {
@@ -65,7 +65,11 @@ export default class CinemaApp extends Component {
           number={this.state.selects}
         />
         <button onClick={() => this.resetSelects() }>リセット</button>
-        <button>次へ</button>
+        <form action="/reservations/new" method="GET">
+          <input type="hidden" name="schedule" value={this.state.schedule} />
+          <input type="hidden" name="selects" value={this.state.selects} />
+          <input type="submit" value="次へ" />
+        </form>
       </div>
     );
   }
