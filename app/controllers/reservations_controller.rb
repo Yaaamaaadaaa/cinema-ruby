@@ -1,13 +1,31 @@
 class ReservationsController < ApplicationController
+before_action :authenticate_user!, only: [:new]
+
   def show
     @schedule = Schedule.find(params[:id])
   end
 
   def new
+    @reservation = Reservation.new
     @schedule = Schedule.find(params[:schedule])
     @selects = params[:selects].split(",")
     @count = @selects.size
     amount = 1800 * @count
     @amount = amount.to_s(:delimited)
   end
+
+  def create
+    @reservation = Reservation.new(reservation_params)
+    if @reservation.save
+      redirect_to root_path
+    else
+      redirect_to root_path
+    end
+  end
+
+  private
+
+    def reservation_params
+      params.require(:reservation).permit(:reserved_seat, :user_id, :schedule_id)
+    end
 end
