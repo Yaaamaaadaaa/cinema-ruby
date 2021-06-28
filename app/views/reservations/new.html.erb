@@ -1,13 +1,21 @@
-<div class="white">
-  <h2>ご予約内容の確認</h2>
-  <h3>お客様情報</h3>
-  <h3>今回のお申し込み内容</h3>
-  <ul>
+<div>
+  <h2 class="white-text">ご予約内容の確認</h2>
+  <h3 class="white-text">お客様情報</h3>
+  <ul class="white-text">
+    <li>メールアドレス:<%= current_user.email %></li>
+  </ul>
+  <h3 class="white-text">今回のお申し込み内容</h3>
+  <ul class="white-text">
     <li>作品 <%= @schedule.movie.title %></li>
     <li>日時 <%= @schedule.screening_date.strftime('%H:%M') %></li>
     <li>チケット金額: 1,800円×<%= @count %></li>
     <li>合計: <%= @amount %>円</li>
     <li>座席 <%= @count %>名様の席を指定いたしました。<%= @selects %></li>
   </ul>
-  <button>予約する<button>
+  <%= form_for(@reservation) do |f| %>
+    <%= f.hidden_field :reserved_seat, :value => @selects %>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+    <%= f.hidden_field :schedule_id, :value => @schedule.id %>
+    <%= f.submit "予約する" %>
+  <% end %>
 </div>
