@@ -1,0 +1,15 @@
+<section class="white-text">
+  <div>
+    <h1>会員情報</h1>
+  </div>
+  <table>
+    <tr>
+      <th>メールアドレス</th>
+      <td><%= current_user.email %></td>
+    </tr>
+    <tr>
+      <th>予約済みの作品一覧</th>
+      <td><%= @schedules %></td>
+    </tr>
+  </table>
+</section>
