@@ -3,6 +3,7 @@ before_action :authenticate_user!, only: [:new]
 
   def show
     @schedule = Schedule.find(params[:id])
+    @reserved_seat = @schedule.reservations.pluck(:reserved_seat).join(' ').gsub(" ", "/")
   end
 
   def new

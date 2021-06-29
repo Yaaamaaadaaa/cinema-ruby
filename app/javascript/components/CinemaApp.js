@@ -7,6 +7,7 @@ export default class CinemaApp extends Component {
     super(props);
     this.state = {
       selects: [],
+      reserved_seat: [this.props.reserved_seat],
       screen: [this.props.screen],
       schedule: [this.props.schedule]
     };
@@ -59,13 +60,14 @@ export default class CinemaApp extends Component {
           onClick={(i) => this.handleClick(i)}
           screen={this.state.screen}
           selects={this.state.selects}
+          reserved_seat={this.state.reserved_seat}
         />
         <div>選択中の座席</div>
         <Selects
           number={this.state.selects}
         />
         <button onClick={() => this.resetSelects() }>リセット</button>
-        <form action="/reservations/new" method="GET">
+        <form action="/reservations/new" method="GET" style={{display: "inline"}}>
           <input type="hidden" name="schedule" value={this.state.schedule} />
           <input type="hidden" name="selects" value={this.state.selects} />
           <input type="submit" value="次へ" />
