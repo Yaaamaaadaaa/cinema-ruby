@@ -11,13 +11,25 @@ export default class Screen extends React.Component {
   }
 
   renderSeat(i) {
-    return (
-      <Seat
-        number={i}
-        onClick={() => this.props.onClick(i)}
-        color={this.renderSeatColor(i)}
-      />
-    );
+    const str = this.props.reserved_seat + "";
+    if (str.split("/").some((element) => element === i)) {
+      return (
+        <button
+        className="seat"
+        style={{background: "gray"}}
+        >
+          {i}
+        </button>
+      );
+    } else {
+      return (
+        <Seat
+          number={i}
+          onClick={() => this.props.onClick(i)}
+          color={this.renderSeatColor(i)}
+        />
+      );
+    }
   }
     
   nullSeat() {
