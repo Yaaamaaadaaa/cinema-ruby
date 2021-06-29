@@ -15,37 +15,27 @@
   <body style="background-color:black;">
     <div id="app" class="black">
       <header>
-        <nav>
-          <div class="nav-wrapper red accent-4">
+        <nav class="nav-extended red accent-4">
+          <div class="nav-wrapper">
             <%= link_to 'Ruby シネマワールド', root_path, {class: "brand-logo white-space:nowrap"} %>
-            <a data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            </ul>
+          </div>
+          <div class="nav-content">
+            <ul class="tabs tabs-transparent">
               <% if user_signed_in? %>
-                <li><%= link_to current_user.email, edit_user_registration_path %></li>
-                <li><%= link_to '上映スケジュール', root_path %></li>
-                <li><%= link_to '会員情報', users_path %></li>
-                <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+                <li class="tab"><%= link_to current_user.email, users_path %></li>
+                <li class="tab"><%= link_to '上映スケジュール', root_path %></li>
+                <li class="tab"><%= link_to '会員情報', users_path %></li>
+                <li class="tab"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
               <% else %>
-                <li><%= link_to '上映スケジュール', root_path %></li>
-                <li><%= link_to '新規登録', new_user_registration_path %></li>
-                <li><%= link_to 'ログイン', new_user_session_path %></li>
+                <li class="tab"><%= link_to '上映スケジュール', root_path %></li>
+                <li class="tab"><%= link_to '新規登録', new_user_registration_path %></li>
+                <li class="tab"><%= link_to 'ログイン', new_user_session_path %></li>
               <% end %>
             </ul>
           </div>
         </nav>
-  
-        <ul class="sidenav black" id="mobile-menu">
-          <% if user_signed_in? %>
-            <li class="red accent-4"><%= link_to current_user.email, edit_user_registration_path, {class: "white-text"} %></li>
-            <li class="red accent-4"><%= link_to '上映スケジュール', root_path, {class: "white-text"} %></li>
-            <li class="red accent-4"><%= link_to '会員情報', users_path, {class: "white-text"} %></li>
-            <li class="red accent-4"><%= link_to 'ログアウト', destroy_user_session_path, {method: :delete, class: "white-text"} %></li>
-          <% else %>
-            <li class="red accent-4"><%= link_to '上映スケジュール', root_path, {class: "white-text"} %></li>
-            <li class="red accent-4"><%= link_to '新規登録', new_user_registration_path, {class: "white-text"} %></li>
-            <li class="red accent-4"><%= link_to 'ログイン', new_user_session_path, {class: "white-text"} %></li>
-          <% end %>
-        </ul>
       </header>
 
       <p class="notice white-text"><%= notice %></p>
