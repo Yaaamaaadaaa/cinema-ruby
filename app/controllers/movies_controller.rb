@@ -4,7 +4,9 @@ class MoviesController < ApplicationController
   end
 
   def new
+    @movies = Movie.all
     @movie = Movie.new
+    @schedule = Schedule.new
   end
 
   def create
