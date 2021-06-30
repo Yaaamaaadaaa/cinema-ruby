@@ -28,6 +28,9 @@
                 <li class="tab"><%= link_to '上映スケジュール', root_path %></li>
                 <li class="tab"><%= link_to '会員情報', users_path %></li>
                 <li class="tab"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+                <% if current_user.id == 1%>
+                  <li class="tab"><%= link_to "上映スケジュールの追加", new_movie_path %></li>
+                <% end %>
               <% else %>
                 <li class="tab"><%= link_to '上映スケジュール', root_path %></li>
                 <li class="tab"><%= link_to '新規登録', new_user_registration_path %></li>

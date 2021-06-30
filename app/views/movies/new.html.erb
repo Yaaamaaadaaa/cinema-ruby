@@ -1,0 +1,23 @@
+<h2 class="white-text">映画の追加</h2>
+
+<%= form_for(@movie) do |f| %>
+
+  <div class="field">
+    <%= f.label :タイトル, class: "white-text" %><br />
+    <%= f.text_field :title, class: "white-text" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :詳細, class: "white-text" %><br />
+    <%= f.text_field :detail, class: "white-text" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :作品の上映時間, class: "white-text" %><br />
+    <%= f.time_field :running_time, class: "white-text" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "新規登録" %>
+  </div>
+<% end %>
