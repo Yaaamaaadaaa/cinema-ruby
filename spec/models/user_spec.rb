@@ -23,5 +23,4 @@ RSpec.describe User, type: :model do
     expect(FactoryBot.build(:user,password:"password",password_confirmation: "passward")).to_not be_valid 
   end 
 
-
 end
