@@ -37,9 +37,14 @@ end
   )
 end
 
-User.create!(
-  email: 'admin@test.com', password: 'password'
-)
+[
+  ['admin@test.com', 'password'],
+  ['gest@example.com', 'password']
+].each do |email, password|
+  User.create!(
+    { email: email, password: password }
+  )
+end
 
 [
   ['I10', 1, 2],

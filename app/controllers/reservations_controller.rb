@@ -18,9 +18,7 @@ before_action :authenticate_user!, only: [:new]
   def create
     @reservation = Reservation.new(reservation_params)
     if @reservation.save
-      redirect_to root_path
-    else
-      redirect_to root_path
+      redirect_to users_path, notice: "予約が完了しました"
     end
   end
 

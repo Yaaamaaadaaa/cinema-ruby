@@ -1,0 +1,51 @@
+<h2 class="white-text">映画の追加</h2>
+
+<%= form_for(@movie) do |f| %>
+  <div class="field">
+    <%= f.label :タイトル, class: "white-text" %><br />
+    <%= f.text_field :title, class: "white-text" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :詳細, class: "white-text" %><br />
+    <%= f.text_field :detail, class: "white-text" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :作品の上映時間, class: "white-text" %><br />
+    <%= f.time_field :running_time, class: "white-text" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "新規登録" %>
+  </div>
+<% end %>
+
+<h2 class="white-text">上映スケジュールの追加</h2>
+<% @movies.each do |movie| %>
+  <div class="row">
+    <div class="card blue-grey darken-4">
+      <div class="card-content white-text">
+        <span class="card-title"><%= movie.title %></span>
+        <p><%= movie.detail %></p>
+        <%= form_for(@schedule) do |f| %>
+          <div class="field">
+            <%= f.label :時間, class: "white-text" %><br />
+            <%= f.datetime_field :screening_date, class: "white-text" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :スクリーン, class: "white-text" %><br />
+            <%= f.number_field :theater_number, min: 1, max: 8, class: "white-text" %>
+          </div>
+
+            <%= f.hidden_field :movie_id, :value => movie.id %>
+
+          <div class="actions">
+            <%= f.submit "追加" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>

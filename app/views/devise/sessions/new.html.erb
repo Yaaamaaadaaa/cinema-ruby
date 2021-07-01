@@ -16,4 +16,12 @@
   </div>
 <% end %>
 
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= f.hidden_field :email, :value => "gest@example.com" %>
+    <%= f.hidden_field :password, :value => "password" %>
+    <%= f.submit "ゲストユーザーとしてログイン" %>
+<% end %>
+
+
+
 <%= render "devise/shared/links" %>

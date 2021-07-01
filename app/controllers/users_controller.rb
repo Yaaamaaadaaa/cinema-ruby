@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
   def index
-    @schedules = current_user.schedules.pluck(:id)
+    @reservations = current_user.reservations.order(id: "DESC")
   end
 end

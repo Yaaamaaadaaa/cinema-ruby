@@ -1,15 +1,29 @@
 <section class="white-text">
   <div>
-    <h1>会員情報</h1>
+    <h3>会員情報</h3>
+    <table>
+      <tr>
+        <th>メールアドレス</th>
+        <td><%= current_user.email %></td>
+      </tr>
+      <tr>
+        <th>会員情報の変更</th>
+        <td><button><%= link_to "変更はこちらから", edit_user_registration_path %></button></td>
+      </tr>
+    </table>
   </div>
-  <table>
-    <tr>
-      <th>メールアドレス</th>
-      <td><%= current_user.email %></td>
-    </tr>
-    <tr>
-      <th>予約済みの作品一覧</th>
-      <td><%= @schedules %></td>
-    </tr>
-  </table>
+  <h3>予約済み作品</h3>
+  <% @reservations.each do |reservation| %>
+    <div class="row">
+      <div class="card blue-grey darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">作品名: <%= reservation.schedule.movie.title %></span>
+          <p>上映開始時間: <%= reservation.schedule.screening_date.strftime('%H:%M') %></p>
+          <p>スクリーン: <%= reservation.schedule.theater_number %></p>
+          <p>予約座席: <%= reservation.reserved_seat %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <button><%= link_to "上映スケジュールへ戻る", root_path %></button>
 </section>
