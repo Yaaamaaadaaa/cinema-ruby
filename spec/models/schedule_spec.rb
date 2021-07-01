@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
+RSpec.describe Schedule, type: :model do
 
   before do
     movie1 = FactoryBot.create(:movie)

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
+RSpec.describe Movie, type: :model do
 
   it "タイトル、詳細、上映時間があれば登録できる" do 
     expect(FactoryBot.create(:movie)).to be_valid
