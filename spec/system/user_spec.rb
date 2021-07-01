@@ -4,7 +4,7 @@ RSpec.describe User do
 
   let(:user) { FactoryBot.create(:user) }
 
-  describe 'edit' do
+  describe 'index' do
 
     context 'ユーザーがログインしている場合' do
 
