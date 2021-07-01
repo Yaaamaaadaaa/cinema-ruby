@@ -13,6 +13,7 @@ RSpec.describe Movie do
     context "一般ユーザーがログインした場合" do
 
       before do
+        Movie.create!(title: "テスト", detail: "テスト", running_time: "02:30")
         visit new_user_session_path
         fill_in 'user[email]', with: user2.email
         fill_in 'user[password]', with: user2.password
@@ -21,7 +22,7 @@ RSpec.describe Movie do
       end
 
       it '映画が表示される' do
-        expect(page).to have_css '.container'
+        expect(page).to have_css '.card-title'
       end
 
       it '上映スケジュールリンクが表示される' do
