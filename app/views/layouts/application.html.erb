@@ -24,7 +24,11 @@
           <div class="nav-content">
             <ul class="tabs tabs-transparent">
               <% if user_signed_in? %>
-                <li class="tab"><%= link_to current_user.email, users_path %></li>
+                <% if current_user.id == 1 %>
+                  <li class="tab"><%= link_to '管理者としてログインしています', users_path %></li>
+                <% else %>
+                  <li class="tab"><%= link_to current_user.email, users_path %></li>
+                <% end %>
                 <li class="tab"><%= link_to '上映スケジュール', root_path %></li>
                 <li class="tab"><%= link_to '会員情報', users_path %></li>
                 <li class="tab"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
@@ -33,7 +37,7 @@
                 <% end %>
               <% else %>
                 <li class="tab"><%= link_to '上映スケジュール', root_path %></li>
-                <li class="tab"><%= link_to '新規登録', new_user_registration_path %></li>
+                <li class="tab"><%= link_to '会員登録', new_user_registration_path %></li>
                 <li class="tab"><%= link_to 'ログイン', new_user_session_path %></li>
               <% end %>
             </ul>

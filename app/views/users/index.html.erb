@@ -8,7 +8,9 @@
       </tr>
       <tr>
         <th>会員情報の変更</th>
-        <td><button><%= link_to "変更はこちらから", edit_user_registration_path %></button></td>
+        <td>
+          <%= link_to "変更はこちらから", edit_user_registration_path, class: "waves-effect waves-light btn grey darken-3", style: "margin-top: 20px" %>
+        </td>
       </tr>
     </table>
   </div>
@@ -25,5 +27,7 @@
       </div>
     </div>
   <% end %>
-  <button><%= link_to "上映スケジュールへ戻る", root_path %></button>
+  <div style="text-align: center">
+    <%= link_to "上映スケジュールへ戻る", root_path, class: "waves-effect waves-light btn grey darken-3", style: "margin: 20px 0px" %>
+  </div>
 </section>
