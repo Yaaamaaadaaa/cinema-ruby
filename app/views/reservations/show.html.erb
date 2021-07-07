@@ -2,5 +2,8 @@
   <div class="container white">
     <%= react_component("CinemaApp", {reserved_seat: @reserved_seat, screen: @schedule.theater_number, schedule: @schedule.id}) %>
   </div>
-<p class="white-text">一つ前に戻る</p>
-<p class="white-text">作品を選び直す</p>
+<div style="text-align: center">
+  <a href="/" class="waves-effect waves-light btn grey darken-3" style="margin:30px 0px;">
+    <i class="material-icons left">arrow_back</i>作品を選び直す
+  </a>
+</div>
