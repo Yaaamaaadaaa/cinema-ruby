@@ -9,7 +9,7 @@ class MoviesController < ApplicationController
     14.times do |i|
       @date[i] = Date.current + i
     end
-    @movies = Movie.joins(:schedules).where(schedules: {screening_date: @search_date.in_time_zone.all_day}).order(id: "DESC")
+    @movies = Movie.all.order(id: "DESC")
     @schedule = Schedule.where(screening_date: @search_date.in_time_zone.all_day)
   end
 
