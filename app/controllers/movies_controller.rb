@@ -1,6 +1,16 @@
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.includes(:schedules).order(id: "DESC")
+    if params[:search].blank?
+      @search_date = Date.current
+    else
+      @search_date = params[:search]
+    end
+    @date = []
+    14.times do |i|
+      @date[i] = Date.current + i
+    end
+    @movies = Movie.all.order(id: "DESC")
+    @schedule = Schedule.where(screening_date: @search_date.in_time_zone.all_day)
   end
 
   def new

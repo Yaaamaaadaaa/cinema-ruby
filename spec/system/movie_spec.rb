@@ -14,6 +14,7 @@ RSpec.describe Movie do
 
       before do
         Movie.create!(title: "テスト", detail: "テスト", running_time: "02:30")
+        Schedule.create!(movie_id: 1, theater_number: 1, screening_date: '9:30')
         visit new_user_session_path
         fill_in 'user[email]', with: user2.email
         fill_in 'user[password]', with: user2.password
