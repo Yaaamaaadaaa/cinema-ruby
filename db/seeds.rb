@@ -20,17 +20,17 @@ end
 
 [
   [1, Time.local(2021,7,1,9,30), 1],
-  [1, Time.local(2021,7,1,10,20), 7],
+  [1, Time.local(2021,7,2,10,20), 7],
   [2, Time.local(2021,7,1,9,30), 2],
-  [2, Time.local(2021,7,1,10,20), 2],
+  [2, Time.local(2021,7,2,10,20), 2],
   [3, Time.local(2021,7,1,9,30), 3],
-  [3, Time.local(2021,7,1,10,20), 3],
+  [3, Time.local(2021,7,2,10,20), 3],
   [4, Time.local(2021,7,1,9,30), 7],
-  [4, Time.local(2021,7,1,10,20), 4],
+  [4, Time.local(2021,7,2,10,20), 4],
   [5, Time.local(2021,7,1,9,30), 5],
-  [5, Time.local(2021,7,1,10,20), 5],
+  [5, Time.local(2021,7,2,10,20), 5],
   [6, Time.local(2021,7,1,9,30), 8],
-  [6, Time.local(2021,7,1,10,20), 6]
+  [6, Time.local(2021,7,2,10,20), 6]
 ].each do |movie_id, screening_date, theater_number|
   Schedule.create!(
     { movie_id: movie_id, screening_date: screening_date, theater_number: theater_number }

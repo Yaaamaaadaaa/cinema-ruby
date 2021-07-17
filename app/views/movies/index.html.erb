@@ -1,4 +1,11 @@
-<div class="container">
+<div class="container white-text">
+  <div style="background:gray">
+    <p>検索</p>
+    <%= form_with(url: root_path,:method => 'get') do |f| %>
+      <%= f.date_field :search, class: "white-text" %>
+      <%= f.submit "検索" %>
+    <% end %>
+  </div>
   <h4 class="white-text">公開中の作品一覧</h4>
   <div class="container">
     <% @movies.each do |movie| %>
@@ -7,12 +14,14 @@
           <div class="card-content white-text">
             <span class="card-title"><%= movie.title %></span>
             <p><%= movie.detail %></p>
-            <% movie.schedules.each do |schedule| %>
-              <li class="card black">
-                <%= link_to reservation_path(schedule), class: "white-text" do %>
-                  SCREEN<%= schedule.theater_number %> <span style="padding-left: 50px;"><%= schedule.screening_date.strftime('%H:%M') %>~</span><span class="yellow-text" style="float: right;">購入　></span>
-                <% end %>
-              </li>
+            <% @schedule.each do |schedule| %>
+              <% if schedule.movie_id == movie.id %>
+                <li class="card black">
+                  <%= link_to reservation_path(schedule), class: "white-text" do %>
+                    SCREEN<%= schedule.theater_number %> <span style="padding-left: 50px;"><%= schedule.screening_date.strftime('%H:%M') %>~</span><span class="yellow-text" style="float: right;">購入　></span>
+                  <% end %>
+                </li>
+              <% end %>
             <% end %>
           </div>
         </div>
