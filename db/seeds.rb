@@ -22,52 +22,150 @@
   )
 end
 
-19.upto(31) do |i|
-  [
-    [1, Time.local(2021,7,i,9,30), 1],
-    [1, Time.local(2021,7,i,12,30), 1],
-    [1, Time.local(2021,7,i,15,30), 2],
-    [1, Time.local(2021,7,i,18,30), 3],
-    [2, Time.local(2021,7,i,9,30), 2],
-    [2, Time.local(2021,7,i,12,40), 2],
-    [2, Time.local(2021,7,i,15,30), 3],
-    [2, Time.local(2021,7,i,18,30), 4],
-    [3, Time.local(2021,7,i,9,30), 3],
-    [3, Time.local(2021,7,i,10,20), 3],
-    [3, Time.local(2021,7,i,15,30), 5],
-    [3, Time.local(2021,7,i,18,30), 7],
-    [4, Time.local(2021,7,i,9,30), 4],
-    [4, Time.local(2021,7,i,10,20), 4],
-    [4, Time.local(2021,7,i,15,30), 4],
-    [4, Time.local(2021,7,i,18,30), 5],
-    [5, Time.local(2021,7,i,9,30), 5],
-    [5, Time.local(2021,7,i,10,20), 5],
-    [5, Time.local(2021,7,i,15,30), 5],
-    [5, Time.local(2021,7,i,18,30), 5],
-    [6, Time.local(2021,7,i,9,30), 6],
-    [6, Time.local(2021,7,i,10,20), 6],
-    [6, Time.local(2021,7,i,15,30), 6],
-    [6, Time.local(2021,7,i,18,30), 7],
-    [7, Time.local(2021,7,i,9,30), 7],
-    [7, Time.local(2021,7,i,12,30), 7],
-    [7, Time.local(2021,7,i,15,30), 1],
-    [7, Time.local(2021,7,i,18,30), 2],
-    [8, Time.local(2021,7,i,9,30), 8],
-    [8, Time.local(2021,7,i,12,30), 8],
-    [8, Time.local(2021,7,i,15,30), 7],
-    [8, Time.local(2021,7,i,20,30), 8],
-    [9, Time.local(2021,7,i,8,30), 1],
-    [9, Time.local(2021,7,i,12,00), 2],
-    [9, Time.local(2021,7,i,10,30), 6],
-    [9, Time.local(2021,7,i,18,30), 6],
-    [10, Time.local(2021,7,i,9,30), 1],
-    [10, Time.local(2021,7,i,12,30), 3],
-    [10, Time.local(2021,7,i,15,30), 8],
-    [10, Time.local(2021,7,i,18,30), 1]
-  ].each do |movie_id, screening_date, theater_number|
-    Schedule.create!(
-      { movie_id: movie_id, screening_date: screening_date, theater_number: theater_number }
-    )
+7.upto(9) do |month|
+  1.upto(31) do |day|
+    if day % 3 == 0 && day % 5 == 0
+      [
+        [1, Time.local(2021,month,day,9,30), 1],
+        [1, Time.local(2021,month,day,18,30), 3],
+        [2, Time.local(2021,month,day,9,30), 2],
+        [2, Time.local(2021,month,day,12,40), 2],
+        [2, Time.local(2021,month,day,15,30), 3],
+        [3, Time.local(2021,month,day,9,30), 3],
+        [3, Time.local(2021,month,day,10,20), 3],
+        [3, Time.local(2021,month,day,18,30), 7],
+        [4, Time.local(2021,month,day,9,30), 4],
+        [4, Time.local(2021,month,day,10,20), 4],
+        [5, Time.local(2021,month,day,9,30), 5],
+        [5, Time.local(2021,month,day,10,20), 5],
+        [5, Time.local(2021,month,day,15,30), 5],
+        [6, Time.local(2021,month,day,9,30), 6],
+        [6, Time.local(2021,month,day,15,30), 6],
+        [6, Time.local(2021,month,day,18,30), 7],
+        [7, Time.local(2021,month,day,18,30), 2],
+        [8, Time.local(2021,month,day,9,30), 8],
+        [8, Time.local(2021,month,day,12,30), 8],
+        [8, Time.local(2021,month,day,15,30), 7],
+        [8, Time.local(2021,month,day,20,30), 8],
+        [9, Time.local(2021,month,day,8,30), 1],
+        [9, Time.local(2021,month,day,10,30), 6],
+        [9, Time.local(2021,month,day,18,30), 6],
+        [10, Time.local(2021,month,day,9,30), 1],
+        [10, Time.local(2021,month,day,12,30), 3],
+        [10, Time.local(2021,month,day,15,30), 8],
+        [10, Time.local(2021,month,day,18,30), 1]
+      ].each do |movie_id, screening_date, theater_number|
+        Schedule.create!(
+          { movie_id: movie_id, screening_date: screening_date, theater_number: theater_number }
+        )
+      end
+    elsif day % 3 == 0
+      [
+        [1, Time.local(2021,month,day,15,30), 2],
+        [1, Time.local(2021,month,day,18,30), 3],
+        [2, Time.local(2021,month,day,15,30), 3],
+        [2, Time.local(2021,month,day,18,30), 4],
+        [3, Time.local(2021,month,day,9,30), 3],
+        [3, Time.local(2021,month,day,10,20), 3],
+        [3, Time.local(2021,month,day,15,30), 5],
+        [4, Time.local(2021,month,day,11,00), 4],
+        [4, Time.local(2021,month,day,13,50), 4],
+        [4, Time.local(2021,month,day,18,30), 2],
+        [5, Time.local(2021,month,day,9,30), 2],
+        [5, Time.local(2021,month,day,10,20), 3],
+        [5, Time.local(2021,month,day,18,30), 2],
+        [6, Time.local(2021,month,day,15,30), 6],
+        [6, Time.local(2021,month,day,18,30), 7],
+        [7, Time.local(2021,month,day,9,40), 4],
+        [7, Time.local(2021,month,day,12,30), 7],
+        [7, Time.local(2021,month,day,13,30), 1],
+        [7, Time.local(2021,month,day,18,20), 4],
+        [8, Time.local(2021,month,day,13,20), 5],
+        [8, Time.local(2021,month,day,20,30), 5],
+        [9, Time.local(2021,month,day,8,30), 1],
+        [9, Time.local(2021,month,day,12,00), 2],
+        [9, Time.local(2021,month,day,10,30), 1],
+        [9, Time.local(2021,month,day,18,30), 1],
+        [10, Time.local(2021,month,day,8,00), 6],
+        [10, Time.local(2021,month,day,10,30), 5],
+        [10, Time.local(2021,month,day,15,30), 6]
+      ].each do |movie_id, screening_date, theater_number|
+        Schedule.create!(
+          { movie_id: movie_id, screening_date: screening_date, theater_number: theater_number }
+        )
+      end
+    elsif day % 5 == 0
+      [
+        [1, Time.local(2021,month,day,9,30), 1],
+        [1, Time.local(2021,month,day,12,30), 1],
+        [1, Time.local(2021,month,day,15,30), 2],
+        [2, Time.local(2021,month,day,9,30), 2],
+        [2, Time.local(2021,month,day,12,40), 2],
+        [2, Time.local(2021,month,day,18,30), 4],
+        [3, Time.local(2021,month,day,9,30), 3],
+        [3, Time.local(2021,month,day,15,30), 5],
+        [3, Time.local(2021,month,day,18,30), 7],
+        [4, Time.local(2021,month,day,10,20), 4],
+        [4, Time.local(2021,month,day,15,30), 4],
+        [4, Time.local(2021,month,day,18,30), 5],
+        [5, Time.local(2021,month,day,18,30), 5],
+        [6, Time.local(2021,month,day,9,30), 6],
+        [6, Time.local(2021,month,day,10,20), 6],
+        [7, Time.local(2021,month,day,9,30), 7],
+        [7, Time.local(2021,month,day,12,30), 7],
+        [7, Time.local(2021,month,day,15,30), 1],
+        [7, Time.local(2021,month,day,18,30), 2],
+        [8, Time.local(2021,month,day,9,30), 8],
+        [8, Time.local(2021,month,day,12,30), 8],
+        [8, Time.local(2021,month,day,15,30), 7],
+        [9, Time.local(2021,month,day,14,00), 2],
+        [9, Time.local(2021,month,day,15,30), 6],
+        [9, Time.local(2021,month,day,17,10), 6],
+        [10, Time.local(2021,month,day,10,30), 4],
+        [10, Time.local(2021,month,day,14,20), 3],
+        [10, Time.local(2021,month,day,15,10), 3],
+        [10, Time.local(2021,month,day,19,00), 2]
+      ].each do |movie_id, screening_date, theater_number|
+        Schedule.create!(
+          { movie_id: movie_id, screening_date: screening_date, theater_number: theater_number }
+        )
+      end
+    else
+      [
+        [1, Time.local(2021,month,day,9,30), 1],
+        [1, Time.local(2021,month,day,12,30), 1],
+        [1, Time.local(2021,month,day,13,50), 2],
+        [1, Time.local(2021,month,day,14,30), 3],
+        [2, Time.local(2021,month,day,9,30), 2],
+        [2, Time.local(2021,month,day,12,40), 2],
+        [3, Time.local(2021,month,day,9,30), 3],
+        [3, Time.local(2021,month,day,10,20), 3],
+        [3, Time.local(2021,month,day,15,30), 5],
+        [4, Time.local(2021,month,day,9,30), 4],
+        [4, Time.local(2021,month,day,10,20), 2],
+        [4, Time.local(2021,month,day,18,30), 5],
+        [5, Time.local(2021,month,day,9,30), 5],
+        [6, Time.local(2021,month,day,9,20), 6],
+        [7, Time.local(2021,month,day,9,10), 7],
+        [7, Time.local(2021,month,day,12,20), 7],
+        [7, Time.local(2021,month,day,15,30), 1],
+        [7, Time.local(2021,month,day,18,30), 2],
+        [8, Time.local(2021,month,day,9,10), 8],
+        [8, Time.local(2021,month,day,12,20), 8],
+        [9, Time.local(2021,month,day,7,30), 2],
+        [9, Time.local(2021,month,day,9,00), 7],
+        [9, Time.local(2021,month,day,11,50), 2],
+        [9, Time.local(2021,month,day,14,20), 3],
+        [10, Time.local(2021,month,day,11,30), 3],
+        [10, Time.local(2021,month,day,13,30), 7],
+        [10, Time.local(2021,month,day,15,50), 8],
+        [10, Time.local(2021,month,day,18,00), 1]
+      ].each do |movie_id, screening_date, theater_number|
+        Schedule.create!(
+          { movie_id: movie_id, screening_date: screening_date, theater_number: theater_number }
+        )
+      end
+    end
   end
 end
 
