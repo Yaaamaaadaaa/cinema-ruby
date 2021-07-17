@@ -1,11 +1,20 @@
-<div class="container white-text">
-  <div style="background:gray">
-    <p>検索</p>
-    <%= form_with(url: root_path,:method => 'get') do |f| %>
-      <%= f.date_field :search, class: "white-text" %>
-      <%= f.submit "検索" %>
+<div class="container">
+  <h5 class="white-text">上映スケジュールの検索</h5>
+  <ul class="horizontal-list"> 
+    <% @date.each do |date| %>
+      <li class="item">
+        <a href="/?search=<%= date %>" class="link">
+          <div>　<%= date.strftime("%m/") %></div>
+          <div style="text-align: center;font-size:x-large;">
+            <%= date.strftime("%d") %>
+          </div>
+          <div style="text-align:center;font-size:large;">
+            <%= %w(日 月 火 水 木 金 土)[date.wday] %>
+          </div>
+        </a>
+      </li>
     <% end %>
-  </div>
+  </ul>
   <h4 class="white-text">公開中の作品一覧</h4>
   <div class="container">
     <% @movies.each do |movie| %>
