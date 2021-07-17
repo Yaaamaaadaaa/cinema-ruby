@@ -11,30 +11,64 @@
   ['ミッドナイトスワン', '世界で一番美しいラブストーリー', '2:10'],
   ['砕け散るところを見せてあげる', '常識を覆す、衝撃の愛の物語', '2:10'],
   ['映画 モンスターハンター', '想像を絶する、世界へ', '2:10'],
-  ['劇場版「鬼滅の刃」無限列車編', '果てなく続く 無限の夢の中へ', '2:10']
+  ['劇場版「鬼滅の刃」無限列車編', '果てなく続く 無限の夢の中へ', '2:10'],
+  ['ハニーレモンソーダ', '髪はレモン、性格はソーダな男の子。あなたに出会い世界が変わる', '2:10'],
+  ['東京リベンジャーズ', '最旬実力派俳優陣が大集結！ 過去の人生にリベンジし今を変える！', '2:10'],
+  ['ファイナル・プラン(字幕)', '伝説の爆破強盗・カーターは愛のため、最後の復讐計画に挑む！', '2:10'],
+  ['竜とそばかすの姫', '凶暴ながらもどこか孤独な竜との出逢いをきっかけに、すずは自分の中にある迷いや弱さと向き合っていく――', '2:10']
 ].each do |title, detail, running_time|
   Movie.create!(
     { title: title, detail: detail, running_time: running_time }
   )
 end
 
-[
-  [1, Time.local(2021,7,1,9,30), 1],
-  [1, Time.local(2021,7,2,10,20), 7],
-  [2, Time.local(2021,7,1,9,30), 2],
-  [2, Time.local(2021,7,2,10,20), 2],
-  [3, Time.local(2021,7,1,9,30), 3],
-  [3, Time.local(2021,7,2,10,20), 3],
-  [4, Time.local(2021,7,1,9,30), 7],
-  [4, Time.local(2021,7,2,10,20), 4],
-  [5, Time.local(2021,7,1,9,30), 5],
-  [5, Time.local(2021,7,2,10,20), 5],
-  [6, Time.local(2021,7,1,9,30), 8],
-  [6, Time.local(2021,7,2,10,20), 6]
-].each do |movie_id, screening_date, theater_number|
-  Schedule.create!(
-    { movie_id: movie_id, screening_date: screening_date, theater_number: theater_number }
-  )
+19.upto(31) do |i|
+  [
+    [1, Time.local(2021,7,i,9,30), 1],
+    [1, Time.local(2021,7,i,12,30), 1],
+    [1, Time.local(2021,7,i,15,30), 2],
+    [1, Time.local(2021,7,i,18,30), 3],
+    [2, Time.local(2021,7,i,9,30), 2],
+    [2, Time.local(2021,7,i,12,40), 2],
+    [2, Time.local(2021,7,i,15,30), 3],
+    [2, Time.local(2021,7,i,18,30), 4],
+    [3, Time.local(2021,7,i,9,30), 3],
+    [3, Time.local(2021,7,i,10,20), 3],
+    [3, Time.local(2021,7,i,15,30), 5],
+    [3, Time.local(2021,7,i,18,30), 7],
+    [4, Time.local(2021,7,i,9,30), 4],
+    [4, Time.local(2021,7,i,10,20), 4],
+    [4, Time.local(2021,7,i,15,30), 4],
+    [4, Time.local(2021,7,i,18,30), 5],
+    [5, Time.local(2021,7,i,9,30), 5],
+    [5, Time.local(2021,7,i,10,20), 5],
+    [5, Time.local(2021,7,i,15,30), 5],
+    [5, Time.local(2021,7,i,18,30), 5],
+    [6, Time.local(2021,7,i,9,30), 6],
+    [6, Time.local(2021,7,i,10,20), 6],
+    [6, Time.local(2021,7,i,15,30), 6],
+    [6, Time.local(2021,7,i,18,30), 7],
+    [7, Time.local(2021,7,i,9,30), 7],
+    [7, Time.local(2021,7,i,12,30), 7],
+    [7, Time.local(2021,7,i,15,30), 1],
+    [7, Time.local(2021,7,i,18,30), 2],
+    [8, Time.local(2021,7,i,9,30), 8],
+    [8, Time.local(2021,7,i,12,30), 8],
+    [8, Time.local(2021,7,i,15,30), 7],
+    [8, Time.local(2021,7,i,20,30), 8],
+    [9, Time.local(2021,7,i,8,30), 1],
+    [9, Time.local(2021,7,i,12,00), 2],
+    [9, Time.local(2021,7,i,10,30), 6],
+    [9, Time.local(2021,7,i,18,30), 6],
+    [10, Time.local(2021,7,i,9,30), 1],
+    [10, Time.local(2021,7,i,12,30), 3],
+    [10, Time.local(2021,7,i,15,30), 8],
+    [10, Time.local(2021,7,i,18,30), 1]
+  ].each do |movie_id, screening_date, theater_number|
+    Schedule.create!(
+      { movie_id: movie_id, screening_date: screening_date, theater_number: theater_number }
+    )
+  end
 end
 
 [
