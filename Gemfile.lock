@@ -69,6 +69,7 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     bcrypt (3.1.16)
+    bcrypt_pbkdf (1.1.0)
     bindex (0.8.1)
     bootsnap (1.7.5)
       msgpack (~> 1.0)
@@ -109,6 +110,7 @@ GEM
       devise (>= 4.8.0)
     devise-i18n-views (0.3.7)
     diff-lcs (1.4.4)
+    ed25519 (1.2.4)
     erubi (1.10.0)
     execjs (2.8.1)
     factory_bot (6.2.0)
@@ -280,6 +282,7 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
+  bcrypt_pbkdf
   bootsnap (>= 1.4.4)
   byebug
   capistrano
@@ -290,6 +293,7 @@ DEPENDENCIES
   devise
   devise-i18n
   devise-i18n-views
+  ed25519
   factory_bot_rails
   jbuilder (~> 2.7)
   listen (~> 3.3)
