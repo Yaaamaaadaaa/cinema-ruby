@@ -61,4 +61,4 @@ server '54.150.44.117', user: 'yamada', roles: %w{app db web}
 #     # password: "please use keys"
 #   }
 
-set :ssh_options, keys: '~/.ssh/Yamada_key.pem'
+set :ssh_options, keys: '~/.ssh/yamada_key_rsa'
