@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: cinema-ruby
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
