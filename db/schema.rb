@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2021_06_19_022950) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.time "running_time"
@@ -22,8 +25,8 @@ ActiveRecord::Schema.define(version: 2021_06_19_022950) do
 
   create_table "reservations", force: :cascade do |t|
     t.string "reserved_seat"
-    t.integer "user_id"
-    t.integer "schedule_id"
+    t.bigint "user_id"
+    t.bigint "schedule_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["schedule_id"], name: "index_reservations_on_schedule_id"
@@ -33,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_06_19_022950) do
   create_table "schedules", force: :cascade do |t|
     t.integer "theater_number"
     t.datetime "screening_date"
-    t.integer "movie_id"
+    t.bigint "movie_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["movie_id"], name: "index_schedules_on_movie_id"
