@@ -150,6 +150,13 @@ export default class Screen extends React.Component {
               {this.nullSeat("X")}
               {this.nullSeat("X")}
               {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
             </div>
             <div className="board-row">
               {this.nullSeat("E1")}
@@ -424,6 +431,8 @@ export default class Screen extends React.Component {
               {this.nullSeat("X")}
               {this.nullSeat("X")}
               {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
             </div>
             <div className="board-row">
               {this.nullSeat("D1")}
@@ -613,6 +622,10 @@ export default class Screen extends React.Component {
               {this.nullSeat("C18")}
             </div>
             <div className="board-row">
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
               {this.nullSeat("X")}
               {this.nullSeat("X")}
               {this.nullSeat("X")}
@@ -893,6 +906,10 @@ export default class Screen extends React.Component {
               {this.nullSeat("X")}
               {this.nullSeat("X")}
               {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
             </div>
             <div className="board-row">
               {this.nullSeat("D1")}
@@ -1143,6 +1160,10 @@ export default class Screen extends React.Component {
               {this.nullSeat("C18")}
             </div>
             <div className="board-row">
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
               {this.nullSeat("X")}
               {this.nullSeat("X")}
               {this.nullSeat("X")}
@@ -1414,6 +1435,11 @@ export default class Screen extends React.Component {
               {this.renderSeat("C20")}
             </div>
             <div className="board-row">
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
               {this.nullSeat("X")}
               {this.nullSeat("X")}
               {this.nullSeat("X")}
