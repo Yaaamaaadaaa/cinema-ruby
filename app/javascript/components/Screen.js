@@ -1455,6 +1455,8 @@ export default class Screen extends React.Component {
               {this.nullSeat("X")}
               {this.nullSeat("X")}
               {this.nullSeat("X")}
+              {this.nullSeat("X")}
+              {this.nullSeat("X")}
             </div>
             <div className="board-row">
               {this.nullSeat("D1")}
