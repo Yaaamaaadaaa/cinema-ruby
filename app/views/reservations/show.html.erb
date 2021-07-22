@@ -1,5 +1,5 @@
 <h4 class="white-text">座席の指定</h4>
-  <div class="container white">
+  <div class="container white" style="overflow-x: scroll;">
     <%= react_component("CinemaApp", {reserved_seat: @reserved_seat, screen: @schedule.theater_number, schedule: @schedule.id}) %>
   </div>
 <div style="text-align: center">
