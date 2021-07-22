@@ -3,7 +3,7 @@ class MoviesController < ApplicationController
     if params[:search].blank?
       @search_date = Date.current
     else
-      @search_date = params[:search]
+      @search_date = DateTime.parse(params[:search])
     end
     @date = []
     14.times do |i|
