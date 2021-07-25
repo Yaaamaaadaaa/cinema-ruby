@@ -1,24 +1,12 @@
-# README
+# アプリケーションの概要
+このサイトは映画館「Rubyワールド」の上映スケジュールの確認と座席の予約ができるwebサイトです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# アプリケーションの機能と技術一覧
+* フレームワークにRuby on Railsを使用
+* UI向上のためReact.jsを使用
+* CSSフレームワークとしてMaterializeを利用
+* ユーザーの作成、編集、削除機能
+* ユーザーのパスワード変更機能
+* 映画・上映スケジュールの作成、編集、削除機能
+* 上映スケジュールの検索機能
+* 座席の予約機能
