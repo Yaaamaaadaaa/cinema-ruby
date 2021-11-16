@@ -22,7 +22,7 @@
   )
 end
 
-7.upto(9) do |month|
+10.upto(12) do |month|
   1.upto(31) do |day|
     if day % 3 == 0 && day % 5 == 0
       [
